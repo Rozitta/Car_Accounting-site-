@@ -1,0 +1,92 @@
+// шапка ( логотип,  меню)
+.head{
+    width: 100%;
+    min-height: rem(80px); 
+    padding-top: rem(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo{
+            display: block;
+            width: rem(102px);
+            height: rem(61px);
+            padding-top: rem(14px);
+            padding-left:rem(4px);
+        &__name{
+            font-family: 'Baufra-Regular';
+            font-size: rem(19px);
+            color:$dark_grey;
+                &--color{
+                    color:$pink;
+                }
+                &--white{
+                    color:$white;
+                }
+            } 
+        }
+        &__menu{
+            max-width: rem(840px);
+            margin-left: rem(32px);
+        }
+        &__items{
+            margin-right: rem(4px);
+        }
+        &__list{
+            
+            min-width: rem(340px);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        } 
+           
+        &__link{
+            position: relative;
+            text-decoration: none;
+            color:$dark_grey;
+            font-size: rem(12px);
+            font-family: "PTSansCaptionRegular";
+            &--grey{
+                color:$grey;
+            }
+            &--white{
+                color:$white;
+            }
+            &:hover{
+                color:$pink;
+                transition: .9s;
+            }
+            &--active::after{
+                content: "";
+                position: absolute;
+                background-color: $pink;
+                display: block;
+                width: 100%;
+                height: rem(3px);
+                top: rem(22px);
+                // transition: width .3s ease-in-out;
+                
+            } 
+        }
+    }
+    .telephone{
+        font-size: rem(12px);
+        color:$dark_grey;
+        font-family: "PTSansCaptionRegular";
+        text-decoration: none;
+        padding-top: rem(2px);
+        &--white{
+            color:#fff;
+        }
+        &--grey{
+            color:$grey;
+        }
+        &--dark_grey{
+            color:$dark_grey;
+        }
+    }
+}

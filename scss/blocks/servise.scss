@@ -1,0 +1,178 @@
+//3 услуги
+.servises {
+    display: block;
+    background: url(../img/car.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    min-height: rem(768px);
+    width: 100%;
+    position: relative;
+
+    @include desctop {
+        min-height: 53rem;
+        .telephone--servise {
+            color: $dark_grey;
+        }
+        @include before_laptop {
+            min-height: 50rem;
+            background-size: 52%;
+        }
+        @include laptop {
+            min-height: 49rem;
+            background-size: 54%;
+        }
+        @include before_tablets {
+            min-height: 44rem;
+        }
+    }
+    .parts {
+        display: flex;
+        justify-content: space-between;
+        .left_part {
+            width: 50%;
+            background-position: left;
+            .servise {
+                &__title {
+                    font-family: 'Baufra-Bold';
+                    font-size: rem(36px);
+                    color: $dark_grey;
+                    margin: 0;
+                    margin-top: rem(34px);
+                }
+                &__accordion {
+                    max-width: rem(460px);
+                    padding-top: rem(30px);
+                    @include laptop {
+                        max-width: rem(350px);
+                    }
+                    &__title {
+                        margin: 0;
+                        margin-left: rem(21px);
+                        margin-bottom: rem(28px);
+                        position: relative;
+                        cursor: pointer;
+                        font-weight: normal;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: rem(2px);
+                            height: 100%;
+                            left: rem(-15px);
+                            background-color: #929292;
+                        }
+                        a {
+                            text-decoration: none;
+                            font-family: "PTSansCaptionRegular";
+                            font-size: rem(18px);
+                            color: $dark_grey;
+                        }
+                        &--active {
+                            a {
+                                font-family: "PTSansCaptionBold";
+                            }
+                            &::before {
+                                background-color: $pink;
+                                width: rem(4px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right_part {
+        width: 50%;
+        background-position: right;
+        padding-left: rem(101px);
+        @include desctop {
+            padding-left: rem(70px);
+        }
+        @include laptop {
+            padding-left: 0;
+        }
+        .desc {
+            &__tittle {
+                font-size: rem(24px);
+                color: #fff;
+                font-family: 'Baufra-Bold';
+                margin: 0;
+                margin-top: rem(49px);
+                position: relative;
+                padding-left: rem(16px);
+                @include before_tablets {
+                    margin-top: rem(15px);
+                    font-size: rem(20px);
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    left: rem(-15px);
+                    left: 0;
+                    background-color: $pink;
+                    width: rem(4px);
+                }
+            }
+            &__name {
+                color: #fff;
+                font-family: "PTSansCaptionBold";
+                font-size: rem(16px);
+                margin-bottom: rem(-4px);
+            }
+            &__item {
+                padding: 0;
+                &__list {
+                    list-style: none;
+                    position: relative;
+                    padding-left: rem(16px);
+                    font-family: "PTSansCaptionRegular";
+                    font-size: rem(14px);
+                    color: #fff;
+                    margin-top: rem(22px);
+                    line-height: rem(15px);
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-color: $pink;
+                        width: rem(6px);
+                        height: rem(6px);
+                        border-radius: 50%;
+                        left: 0;
+                        top: rem(4px);
+                    }
+                }
+            }
+        }
+    }
+    .button {
+        border: none;
+        width: rem(180px);
+        height: rem(45px);
+        background-color: $pink;
+        border-radius: rem(28px);
+        color: #fff;
+        font-size: rem(18px);
+        font-family: 'Baufra-SemiBold';
+        display: block;
+        text-decoration: none;
+        padding: rem(12px) rem(39px);
+        box-sizing: border-box;
+        bottom: rem(75px);
+        position: absolute;
+        transition: .8s;
+        cursor: pointer;
+        @include desctop {
+            bottom: rem(150px);
+        }
+        @include before_tablets {
+            bottom: rem(130px);
+        }
+        &:hover {
+            background-color: darken($pink, 20%);
+        }
+    }
+    .hidden {
+        display: none;
+    }
+}

@@ -1,0 +1,74 @@
+
+@font-face {
+	font-family: 'Baufra-Bold';
+	src: url('../fonts/Baufra/Baufra-Bold.eot');
+	src: local('Baufra-Bold'),
+		url('../fonts/Baufra/Baufra-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Baufra/Baufra-Bold.woff') format('woff'),
+		url('../fonts/Baufra/Baufra-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Baufra-Regular';
+	src: url('../fonts/Baufra/Baufra-Regular.woff');
+	src: local('Baufra-Regular'),
+		url('../fonts/Baufra/Baufra-Regular.eot') format('embedded-opentype'),
+		url('../fonts/Baufra/Baufra-Regular.woff') format('woff'),
+		url('../fonts/Baufra/Baufra-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Baufra-SemiBold';
+	src: url('../fonts/Baufra/Baufra-SemiBold.eot');
+	src: local('Baufra-SemiBold'),
+		url('../fonts/Baufra/Baufra-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Baufra/Baufra-SemiBold.woff') format('woff'),
+		url('../fonts/Baufra/Baufra-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Baufra-Medium';
+	src: url('../fonts/Baufra/Baufra-Medium.eot');
+	src: local('Baufra-Medium'),
+		url('../fonts/Baufra/Baufra-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Baufra/Baufra-Medium.woff') format('woff'),
+		url('../fonts/Baufra/Baufra-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+    font-family: "PTSansCaptionRegular";
+    src: url("../fonts/PTSans/PTSansCaptionRegular.eot");
+    src: url("../fonts/PTSans/PTSansCaptionRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSans/PTSansCaptionRegular.woff") format("woff"),
+    url("../fonts/PTSans/PTSansCaptionRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTSansCaptionBold";
+    src: url("../fonts/PTSans/PTSansCaptionBold.eot");
+    src: url("../fonts/PTSans/PTSansCaptionBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSans/PTSansCaptionBold.woff") format("woff"),
+    url("../fonts/PTSans/PTSansCaptionBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "FuturaBold";
+    src: url("../fonts/Futura/FuturaBold.eot");
+    src: url("../fonts/Futura/FuturaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Futura/FuturaBold.woff") format("woff"),
+    url("../fonts/Futura/FuturaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'ALS Rubl'; 
+    src: local('ALS Rubl'), url('../fonts/rouble.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+    }

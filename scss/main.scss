@@ -1,0 +1,41 @@
+
+// *{outline:1px solid red};
+// colors
+$grey:#7a858d;
+$pink:#fa3b60;
+$white:#f7f7f7;
+$dark_grey:#343339;
+
+
+//resolutions
+$desctop:1200px;
+$before_laptop:1060px;
+$laptop:992px;
+$before_tablets:833px;
+$tablets:768px;
+$phones:480px;
+
+//normalize
+@import './misc/normalize.scss';
+
+//media
+@import './misc/media';
+
+//setups
+@import './misc/fonts';
+@import './misc/layout';
+
+//blocks
+@import './blocks/adjustment';
+@import './blocks/head';
+@import './blocks/car_accounting';
+@import './blocks/our_work';
+@import './blocks/servise';
+@import './blocks/googlemap';
+@import './blocks/footer';
+@import './blocks/slider';
+
+
+    
+
+

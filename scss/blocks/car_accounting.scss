@@ -1,0 +1,95 @@
+.car_accounting{
+    background: url(../img/car_bg.jpg)center top/cover no-repeat;
+    width: 100%;
+    min-height: rem(768px);
+    // название блока
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-top: rem(113px);
+
+        &__1part{
+            font-family:'Baufra-SemiBold';
+            color:$white;
+            font-size: rem(58px);
+            margin-top: rem(30px);
+            @include laptop{
+                font-size: rem(50px);
+            }
+            @include before_tablets{
+                font-size: rem(42px);
+                margin-top: rem(35px);
+            }
+        }
+        &__2part{
+            font-family: 'Baufra-Medium';
+            margin-right: rem(94px);
+            font-size: rem(58px);
+            color:$white;
+            font-weight: 400;
+            @include desctop{
+                margin-right:0;
+            }
+            @include laptop{
+                font-size: rem(50px);  
+            }
+            @include before_tablets{
+                font-size: rem(42px);
+            }
+            &--size{
+                font-family: 'Baufra-Medium';
+                font-size: rem(103px);
+                margin-top: rem(-20px);
+                @include laptop{
+                    font-size: rem(95px);
+                }
+            }
+        }
+        &__des{
+            font-family: 'Baufra-Regular';
+            color:$white;
+            font-size: rem(58px);
+            margin: 0;
+            margin-top: rem(-22px);
+            @include laptop{
+                font-size: rem(50px);
+            }
+            @include before_tablets{
+                font-size: rem(42px);
+            }
+        }
+    } 
+    // цена
+    .price{
+        position: relative;
+        min-width: rem(400px);
+        min-height: rem(60px);
+        margin-top: rem(254px);
+        margin-left: rem(29px);
+        &::before{
+            content: "";
+            position: absolute;
+            width: rem(1px);
+            height: 100%;
+            left: rem(-25px);
+            background-color:$white;
+        }
+        &__list{
+            margin: 0;
+            padding-left: 0;
+            list-style: none;
+            color:$grey;
+            font-size: rem(18px);
+            font-family: "PTSansCaptionRegular";
+            vertical-align: center;
+        }
+        &__items{
+            padding-top: rem(6px);
+            &--margin{
+                margin-top:rem(3px);
+            }
+        }
+    } 
+}

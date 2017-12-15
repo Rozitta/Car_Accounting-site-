@@ -1,0 +1,138 @@
+.map_conteiner {
+    position: relative;
+    width: 100%;
+    min-height: rem(768px);
+    #map {
+        width: 100%;
+        min-height: rem(768px);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .map__style {
+        position: relative;
+        pointer-events: none; 
+        width: 100%;
+        min-height: rem(768px);
+        &::before {
+            content: '';
+            position: absolute;
+            background: linear-gradient(to right, #232427 15%, transparent 85%);
+            width: 100%;
+            height: 100%;
+            opacity: .9;
+        }
+    }
+    .head {
+        width: 100%;
+        min-height: rem(80px);
+        padding-top: rem(12px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navbar {
+            pointer-events: all;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__logo {
+                z-index: 10;
+                display: block;
+                width: rem(102px);
+                height: rem(61px);
+                padding-top: rem(14px);
+                padding-left: rem(4px);
+                &__name {
+                    font-family: 'Baufra-Regular';
+                    font-size: rem(19px);
+                    color: $dark_grey;
+                    &--color {
+                        color: $pink;
+                    }
+                    &--white {
+                        color: $white;
+                    }
+                }
+            }
+            &__menu {
+                max-width: rem(840px);
+                margin-left: rem(32px);
+            }
+            &__items {
+                margin-right: rem(4px);
+            }
+            &__list {
+                min-width: rem(340px);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+            }
+            &__link {
+                position: relative;
+                text-decoration: none;
+                color: $dark_grey;
+                font-size: rem(12px);
+                font-family: "PTSansCaptionRegular";
+                &--grey {
+                    color: $grey;
+                }
+                &--white {
+                    color: $white;
+                }
+                &:hover {
+                    color: $pink;
+                    transition: .9s;
+                }
+                &--active::after {
+                    content: "";
+                    position: absolute;
+                    background-color: $pink;
+                    display: block;
+                    width: 100%;
+                    height: rem(3px);
+                    top: rem(22px); // transition: width .3s ease-in-out;
+                }
+            }
+            .telephone {
+                pointer-events: none;
+                font-size: rem(12px);
+                color: $dark_grey;
+                font-family: "PTSansCaptionRegular";
+                text-decoration: none;
+                padding-top: rem(2px);
+                &--white {
+                    color: #fff;
+                }
+                &--grey {
+                    color: $grey;
+                }
+                &--dark_grey {
+                    color: $dark_grey;
+                }
+            }
+        }
+    }
+    .contact {
+        position: absolute;
+        width: rem(190px);
+        height: rem(190px);
+        margin-top: rem(200px);
+        &__name {
+            font-family: 'Baufra-SemiBold';
+            font-size: rem(36px);
+            color: #fff;
+        }
+        &__street {
+            font-family: "PTSansCaptionRegular";
+            font-size: rem(16px);
+            color: $grey;
+            margin: 0;
+        }
+        &__pfone {
+            color: $pink;
+            font-family: "PTSansCaptionRegular";
+            font-size: rem(16px);
+        }
+    }
+}

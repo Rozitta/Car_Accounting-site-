@@ -1,0 +1,34 @@
+@function rem($px){
+    @return $px/16px+0rem;
+}
+//  миксины для медиазапросов
+@mixin desctop{
+    @media screen and (max-width: $desctop) {
+        @content;
+    }
+}
+@mixin before_laptop{
+    @media screen and (max-width: $before_laptop) {
+        @content;
+    }
+}
+@mixin laptop{
+    @media screen and (max-width: $laptop) {
+        @content;
+    }
+}
+@mixin before_tablets{
+    @media screen and (max-width:$before_tablets){
+        @content;
+    }
+}
+@mixin tablets{
+    @media screen and (max-width: $tablets){
+        @content;
+    }
+}
+@mixin phones{
+    @media screen and (max-width: $phones){
+        @content;
+    }
+}
