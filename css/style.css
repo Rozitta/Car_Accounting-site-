@@ -1059,12 +1059,14 @@ footer {
     z-index: 15;
     z-index: 20;
     cursor: pointer; }
+  .slider .container--slider {
+    position: relative; }
   .slider-wrap {
     background: url(../img/slide_bg.jpg) center top/cover no-repeat;
     width: 100%;
     min-height: 48rem;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
   .slider__list {
@@ -1080,33 +1082,43 @@ footer {
     justify-content: flex-start;
     margin: 0;
     padding: 0;
-    padding-bottom: 70px;
+    padding-bottom: 4.375rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
     .slider__list__arrow {
       position: absolute;
-      left: 92px;
-      top: 68px;
+      left: 0;
+      top: 4.25rem;
       z-index: 20;
       cursor: pointer; }
+      @media screen and (max-width: 1200px) {
+        .slider__list__arrow {
+          left: 1.5625rem; } }
     .slider__list__cross {
       position: absolute;
-      right: 100px;
-      top: 68px;
+      right: 0;
+      top: 4.25rem;
       z-index: 20;
       cursor: pointer; }
+      @media screen and (max-width: 1200px) {
+        .slider__list__cross {
+          right: 1.5625rem; } }
   .slider .desc {
     width: 100%;
-    padding-top: 145px; }
+    padding-top: 9.0625rem; }
+    @media screen and (max-width: 1200px) {
+      .slider .desc {
+        padding-left: 0.9375rem; } }
     .slider .desc__tittle {
       font-size: 1.5rem;
       color: #fff;
       font-family: 'Baufra-Bold';
       margin: 0;
       position: relative;
-      padding-left: 1rem; }
+      padding-left: 1rem;
+      padding-right: 1rem; }
       @media screen and (max-width: 833px) {
         .slider .desc__tittle {
           margin-top: 0.9375rem;
@@ -1128,14 +1140,15 @@ footer {
       justify-content: center; }
       .slider .desc .description__about {
         width: 100%;
-        margin-right: 40px; }
+        margin-right: 2.5rem; }
     .slider .desc__name {
       color: #fff;
       font-family: "PTSansCaptionBold";
       font-size: 1rem;
       margin-bottom: -0.25rem; }
     .slider .desc__item {
-      padding: 0; }
+      padding: 0;
+      max-width: 35.375rem; }
       .slider .desc__item__list {
         list-style: none;
         position: relative;
@@ -1159,9 +1172,9 @@ footer {
           font-family: "PTSansCaptionRegular";
           font-size: 0.875rem;
           color: #fff;
-          line-height: 30px; }
+          line-height: 1.875rem; }
         .slider .desc__item__list--star {
-          padding-top: 65px;
+          padding-top: 4.0625rem;
           list-style: none;
           position: relative;
           padding-left: 2.8125rem;
@@ -1171,23 +1184,23 @@ footer {
           margin-top: 1.375rem;
           line-height: 2.3125rem; }
           .slider .desc__item__list--star::before {
-            padding-top: 67px;
+            padding-top: 4.1875rem;
             content: "*";
             position: absolute;
             color: #fa3b60;
             left: 0;
             top: 0.25rem;
-            font-size: 30px; }
+            font-size: 1.875rem; }
           .slider .desc__item__list--star--one {
-            padding-top: 22px; }
+            padding-top: 1.375rem; }
             .slider .desc__item__list--star--one::before {
-              padding-top: 22px;
+              padding-top: 1.375rem;
               content: "*";
               position: absolute;
               color: #fa3b60;
               left: 0;
               top: 0.25rem;
-              font-size: 30px; }
+              font-size: 1.875rem; }
           .slider .desc__item__list--star--two {
             padding-top: 0; }
             .slider .desc__item__list--star--two::before {
@@ -1197,7 +1210,7 @@ footer {
               color: #fa3b60;
               left: 0;
               top: 0.25rem;
-              font-size: 30px; }
+              font-size: 1.875rem; }
           .slider .desc__item__list--star--three {
             padding-top: 0; }
             .slider .desc__item__list--star--three::before {
@@ -1207,7 +1220,7 @@ footer {
               color: #fa3b60;
               left: 0;
               top: 0.25rem;
-              font-size: 30px; }
+              font-size: 1.875rem; }
   .slider .owl-carousel .owl-item img {
     width: auto; }
   .slider .owl-nav {
@@ -1220,6 +1233,10 @@ footer {
     height: 2.125rem;
     display: inline-block;
     cursor: pointer; }
+    @media (max-width: 770px) {
+      .slider .owl-prev {
+        width: 2.1875rem;
+        height: 2.1875rem; } }
   .slider .owl-next {
     background-image: url("../img/Rectangle __right.png");
     background-repeat: no-repeat;
@@ -1227,6 +1244,10 @@ footer {
     height: 2.125rem;
     display: inline-block;
     cursor: pointer; }
+    @media (max-width: 770px) {
+      .slider .owl-next {
+        width: 2.1875rem;
+        height: 2.1875rem; } }
   .slider .owl-dots {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1242,12 +1263,12 @@ footer {
     align-items: center;
     padding: 0;
     margin: 0;
-    margin-left: 25px;
-    margin-right: 25px; }
+    margin-left: 1.5625rem;
+    margin-right: 1.5625rem; }
   .slider .owl-dot {
     position: relative;
-    width: 82px;
-    height: 1px;
+    width: 5.125rem;
+    height: 0.0625rem;
     display: block;
     background-color: #fff;
     cursor: pointer; }
@@ -1255,34 +1276,35 @@ footer {
     position: absolute;
     display: block;
     color: #fa3b60;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: "PTSansCaptionBold";
     position: absolute;
-    left: 31px;
+    left: 1.9375rem;
     right: 0;
-    top: 9px; }
+    top: 0.5625rem; }
   .slider div.owl-dot.active {
-    height: 6px;
+    height: 0.375rem;
     background-color: #fa3b60; }
   .slider div.owl-dot span {
     display: none; }
   .slider div.owl-dot.active span {
     display: block;
     color: #fa3b60;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: "PTSansCaptionBold";
     position: absolute;
-    left: 31px;
+    left: 1.9375rem;
     right: 0;
-    top: 9px; }
+    top: 0.5625rem; }
   .slider .owl-controls {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    bottom: 40px;
-    left: 415px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    bottom: 2.5rem;
+    left: 0;
+    right: 0;
     z-index: 1000; }
