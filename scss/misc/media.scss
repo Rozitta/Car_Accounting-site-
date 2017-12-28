@@ -27,6 +27,11 @@
         @content;
     }
 }
+@mixin before_phones{
+    @media screen and (max-width: $before_phones){
+        @content;
+    }
+}
 @mixin phones{
     @media screen and (max-width: $phones){
         @content;

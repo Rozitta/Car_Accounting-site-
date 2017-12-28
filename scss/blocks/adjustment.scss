@@ -8,4 +8,41 @@
         padding:0 10px;
         box-sizing: border-box;
     }
+    @include tablets{
+        padding:10px 40px 0 40px;
+    } 
+    @include before_phones{
+        padding:10px 20px 0 20px;
+    }
+    @media (max-width: 395px){
+        padding:10px 10px 0 10px;
+    }
+    &--car_accounting{
+        padding-bottom: 84px;
+        @include tablets{
+            padding-bottom: 10px;
+        }
+        @include before_phones{
+            padding-bottom: 50px;
+        }
+       
+    }
+}
+.head__tab--container{
+    max-width: rem(1150px);
+    margin: 0 auto;
+    position: relative;
+    @include desctop{
+        padding:0 10px;
+        box-sizing: border-box;
+    }
+    @include tablets{
+        padding:10px 40px 0 40px;
+    } 
+    @include before_phones{
+        padding:10px 20px 0 20px;
+    }
+    @media (max-width: 395px){
+        padding:10px 10px 0 10px;
+    }
 }

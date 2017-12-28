@@ -12,9 +12,11 @@ $(document).ready(function () {
         dotsContainer: '.owl-dots',
         navContainer: '.owl-controls'
     });
-
+   
+   
     // по клику появлялся нужный слайдер
     $(".button").click(function () {
+        $("body").addClass("body-hide");  
         var idActiveTitle = $(".servise__accordion__title--active").find("a").attr("href");
         switch (idActiveTitle) {
             case "#registration":
@@ -37,6 +39,9 @@ $(document).ready(function () {
     });
     // скрипт для закрытия слайдера
     $('.slider__list__close').on('click', function () {
+        $('body').removeClass('body-hide'); //добавляет скролл body,  когда закрыт слайдет
         $('.slider').removeClass('slider--active');
     })
+    
 });
+

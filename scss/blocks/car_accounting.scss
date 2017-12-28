@@ -1,15 +1,26 @@
+
 .car_accounting{
     background: url(../img/car_bg.jpg)center top/cover no-repeat;
     width: 100%;
     min-height: rem(768px);
+    position: relative;
     // название блока
     .title{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
         margin: 0;
-        margin-top: rem(113px);
-
+        margin-top: rem(127px);
+        @include tablets{
+            display: block;
+            margin-top: rem(274px);
+        }
+        @include before_phones{
+            margin-top: rem(244px);
+        }
+        @include phones{
+            margin-top: 223px;
+        }
         &__1part{
             font-family:'Baufra-SemiBold';
             color:$white;
@@ -22,28 +33,91 @@
                 font-size: rem(42px);
                 margin-top: rem(35px);
             }
+            @include tablets{
+                font-size: rem(52px);
+            }
+            @include before_phones{
+                font-size: rem(50px); 
+            }
+            @media (max-width: 541px){
+                font-size: rem(48px);
+            }
+            @include phones{
+                font-size: rem(44px);
+            }
+            @media (max-width: 395px){
+                font-size: rem(40px);
+            }
+            @media (max-width: 340px){
+                font-size: rem(37px);
+            }
         }
         &__2part{
             font-family: 'Baufra-Medium';
-            margin-right: rem(94px);
+            // margin-right: rem(94px);
             font-size: rem(58px);
             color:$white;
             font-weight: 400;
-            @include desctop{
-                margin-right:0;
-            }
             @include laptop{
                 font-size: rem(50px);  
             }
             @include before_tablets{
                 font-size: rem(42px);
             }
+            @include tablets{
+                font-size: rem(40px);
+               
+            }
+            @include before_phones{
+                font-size: rem(38px); 
+            }
+            @include phones{
+                font-size: rem(44px); 
+            }
+            &__minutes--tab{
+                font-weight: 500;
+                display: none;
+                @include tablets{
+                    font-size: rem(44px);
+                    display: block;
+                }
+            }
+            &--minutes{
+                display: block;
+            }
+            &--flex{
+                margin-right: rem(94px);
+                display: flex;
+                align-items: center;
+                margin-top: rem(12px);
+                @include desctop{
+                    margin-right:0;
+                }
+                @include tablets{
+                display: block;
+                }
+            }
             &--size{
                 font-family: 'Baufra-Medium';
                 font-size: rem(103px);
                 margin-top: rem(-20px);
+                color:$white;
                 @include laptop{
                     font-size: rem(95px);
+                }
+                @include tablets{
+                    font-size: rem(71px);
+                }
+                @include before_phones{
+                    font-size: rem(69px); 
+                }
+                @include phones{
+                    font-size: rem(82px);
+                }
+            }
+            &--tabl{
+                @include tablets{
+                display: block;
                 }
             }
         }
@@ -59,15 +133,54 @@
             @include before_tablets{
                 font-size: rem(42px);
             }
+            @include tablets{
+                display: none;
+            }
+            @include before_phones{
+                font-size: rem(40px); 
+            }
+            &--tabl{
+                display: none;
+                font-family: 'Baufra-Regular';
+                color:$white;
+                font-size: rem(57px);
+                margin: 0;
+                @include tablets{
+                    display: block;
+                    margin-bottom: rem(50px);
+                    font-weight: 400;
+                }
+                @include before_phones{
+                    font-size: 57px; 
+                    margin-bottom: 39px;
+                }
+            }
+            
+            
         }
     } 
     // цена
     .price{
         position: relative;
-        min-width: rem(400px);
+        max-width: rem(400px);
         min-height: rem(60px);
         margin-top: rem(254px);
         margin-left: rem(29px);
+        @include tablets{
+            margin-top: rem(278px); 
+            margin-bottom: rem(100px);
+        }
+        @include before_phones{
+            margin-top: rem(248px);
+            margin-bottom: rem(30px);
+        }
+        @include phones{
+            margin-top:249px;
+            margin-bottom: rem(30px);
+        }
+        @media (max-width: 340px){
+            margin-top:200px;
+        }
         &::before{
             content: "";
             position: absolute;
@@ -84,6 +197,9 @@
             font-size: rem(18px);
             font-family: "PTSansCaptionRegular";
             vertical-align: center;
+            @media (max-width: 340px){
+                font-size: rem(16px);
+            }
         }
         &__items{
             padding-top: rem(6px);

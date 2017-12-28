@@ -1,3 +1,6 @@
+.body-hide{
+    overflow-y:hidden;
+}
 .slider {
     z-index: -1;
     position: fixed;
@@ -13,7 +16,7 @@
         right: 0;
         bottom: 0;
         z-index: 15;
-        z-index: 20;
+        z-index: 150;
         cursor: pointer;
     }
     .container--slider{
@@ -26,6 +29,10 @@
         position: relative;
         padding-bottom: rem(50px);
         box-sizing: border-box;
+        @include tablets{
+            background:none;
+            background-color: #1c1d21;
+        }
 
     }
     &__list {
@@ -69,6 +76,8 @@
         padding-top: rem(145px);
         @include desctop{
             padding-left: rem(15px);
+            padding-right: rem(15px);
+            box-sizing: border-box;
         }
         &__tittle {
             font-size: 1.5rem;
@@ -81,6 +90,10 @@
             @include before_tablets {
                 margin-top: rem(15px);
                 font-size: rem(20px);
+            }
+            @include tablets {
+                margin-top: rem(15px);
+                font-size: rem(24px);
             }
             &::before {
                 content: "";
@@ -95,10 +108,16 @@
         .description {
             display: flex;
             justify-content: center;
+            @include tablets {
+                flex-direction: column;
+            }
             
             &__about {
                 width: 100%;
                 margin-right: rem(40px);
+                @include tablets {
+                    margin-top: 10px;
+                }
             }
         }
         &__name {
@@ -106,6 +125,10 @@
             font-family: "PTSansCaptionBold";
             font-size: 1rem;
             margin-bottom: -0.25rem;
+            @include tablets {
+                font-size: rem(16px);
+                padding-right: 15px;
+            }
         }
         &__item {
             padding: 0;
@@ -118,6 +141,9 @@
                 font-size: 0.875rem;
                 color: #fff;
                 margin-top: 1.375rem;
+                @include tablets {
+                    font-size: rem(14px);
+                }
                 &::before {
                     content: "";
                     position: absolute;
@@ -211,9 +237,10 @@
         display: inline-block;
         cursor: pointer;
         @media(max-width:770px){
-            width:rem(35px);
-            height:rem(35px);
+            width:rem(45px);
+            height:rem(45px);
         }
+       
     }
     .owl-next {
         background-image: url('../img/Rectangle __right.png');
@@ -223,8 +250,8 @@
         display: inline-block;
         cursor: pointer;
         @media(max-width:770px){
-            width:rem(35px);
-            height:rem(35px);
+            width:rem(45px);
+            height:rem(45px);
         }
     }
     .owl-dots {
@@ -248,11 +275,36 @@
     .owl-dot {
         position: relative;
         width: rem(82px);
-        height: rem(1px);
+        height: 1px;
         display: block;
         background-color: #fff;
         cursor: pointer;
+        &::before{
+            content: '';
+            height: 15px;
+            position: absolute;
+            top: -10px;
+            width: 100%;
+            left: 0; 
+
+        }
+        &::after{
+            content: '';
+            height: 15px;
+            position: absolute;
+            top: 2px;
+            width: 100%;
+            left: 0; 
+
+        }
+        @media(max-width:400px){
+            width: rem(72px);
+        }
+        @media(max-width:355px){
+            width: rem(62px);
+        }
     }
+    
     .owl-dot span {
         position: absolute;
         display: block;

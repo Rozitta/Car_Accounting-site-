@@ -1,4 +1,56 @@
 // шапка ( логотип,  меню)
+
+.head__tab{
+    display: none;
+    @include tablets{
+        width: 100%;
+        min-height: rem(80px); 
+        padding-top: rem(12px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1c1d21;
+        padding-top:0;
+        position: fixed;
+        display: block;
+        padding-bottom: rem(9px);
+        left: 0;
+        top: 0;
+        z-index: 99;
+    } 
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo{
+    display: block;
+    width: rem(102px);
+    height: rem(61px);
+    padding-top: rem(14px);
+    padding-left:rem(4px);
+    @include tablets{
+        z-index: 10000;
+    } 
+}
+.navbar__logo__name{
+    font-family: 'Baufra-Regular';
+    font-size: rem(19px);
+    color:$dark_grey;
+    color:$white;
+}
+.navbar__logo__name--color{
+    color:$pink;
+}
+.telephone--grey{
+    font-size: rem(12px);
+    color:$dark_grey;
+    font-family: "PTSansCaptionRegular";
+    text-decoration: none;
+    padding-top: rem(2px);
+    color: $grey;
+}
 .head{
     width: 100%;
     min-height: rem(80px); 
@@ -6,6 +58,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablets{
+        display: none;
+    } 
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -16,10 +71,14 @@
             height: rem(61px);
             padding-top: rem(14px);
             padding-left:rem(4px);
+            @include tablets{
+                z-index: 1000;
+            }    
         &__name{
             font-family: 'Baufra-Regular';
             font-size: rem(19px);
             color:$dark_grey;
+
                 &--color{
                     color:$pink;
                 }
@@ -30,13 +89,23 @@
         }
         &__menu{
             max-width: rem(840px);
-            margin-left: rem(32px);
+            margin-left: rem(32px); 
+            @include tablets{
+                display: none;
+            } 
+        }
+        &__burger{
+            display: none;
+            @include tablets{
+                display: block;
+                
+            }
         }
         &__items{
             margin-right: rem(4px);
         }
         &__list{
-            
+           
             min-width: rem(340px);
             display: flex;
             justify-content: space-around;
@@ -89,4 +158,134 @@
             color:$dark_grey;
         }
     }
+}
+
+// раскрывающий бургер
+.body{
+    position: relative;
+}
+
+.burger__menu{
+    //display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color:#1c1d21; 
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    padding-top: rem(15px);
+    // opacity: 0;
+    // transition: all .3s ease .15s;
+    // visibility: hidden;
+  
+    // .burger__menu--active{
+    //     padding-top: rem(15px);
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100vh;
+    //     background-color:#1c1d21; 
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 100;
+    //     visibility: visible;
+    //     opacity: 1;
+    // }
+
+    
+    .burger__menu__block{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .burger__menu__contacts{
+        display: flex;
+       justify-content: flex-end;
+       align-items: center;
+        height: rem(52px);
+
+    }
+    .burger__menu__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 59%; 
+        @media (max-width: 500px){
+            width: 62%; 
+        }
+    }
+    .navbar__logo{
+        width: rem(102px);
+        margin-top: -13px;
+        margin-left: 5px;
+        
+       
+    }
+    .navbar__logo__name{
+        font-family: 'Baufra-Regular';
+        font-size: rem(19px);
+        color:$white;
+        }
+    .navbar__logo__name--white{
+        color:$white;
+    }
+    .telephone{
+        font-size: rem(16px);
+        color:$grey;
+        font-family: "PTSansCaptionRegular";
+        text-decoration: none;
+        margin-right: rem(77px);
+        @media (max-width: 395px){
+            margin-right: rem(43px);
+        }
+        @media (max-width: 340px){
+            margin-right: rem(43px);
+            font-size: rem(14px);
+        }
+    }
+    .burger__cross{
+        display: block;
+        cursor: pointer;
+    }
+    .burger__items{
+        position: absolute;
+        bottom: 0;
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: 11111;
+        margin-top: 6.625rem;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        overflow-y: auto;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .burger__item{
+        list-style: none;
+    }
+    .burger__link{
+        font-family: "PTSansCaptionRegular";
+        color:$grey;
+        font-size: rem(24px);
+        text-decoration: none;
+        margin-bottom: rem(68px);
+        display: block;
+    }
+    .layer {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ff725d;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+        opacity: 0.5;
+       }
 }

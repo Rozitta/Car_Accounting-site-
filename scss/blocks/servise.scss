@@ -8,11 +8,18 @@
     min-height: rem(768px);
     width: 100%;
     position: relative;
-
+    transition: 1.3s;
+    &:hover{
+     -webkit-filter: contrast(1.15);
+     filter: contrast(1.15);  
+}
     @include desctop {
         min-height: 53rem;
         .telephone--servise {
             color: $dark_grey;
+            @include tablets{
+                color: $white;  
+            }
         }
         @include before_laptop {
             min-height: 50rem;
@@ -25,6 +32,18 @@
         @include before_tablets {
             min-height: 44rem;
         }
+        @include tablets{
+            padding-top: 50px;
+            background-size: 50%;
+            min-height: rem(460px);
+        }
+        @include before_phones{
+            background-size: 50%;
+        }
+        @media(max-width: 600px){
+            background:none;
+            
+        }
     }
     .parts {
         display: flex;
@@ -32,6 +51,16 @@
         .left_part {
             width: 50%;
             background-position: left;
+            @include before_phones{
+                width: 47%;
+            }
+            @media(max-width: 600px){
+                width: 45%;
+            }
+            @media(max-width: 600px){
+                width: 100%;
+                
+            }
             .servise {
                 &__title {
                     font-family: 'Baufra-Bold';
@@ -46,6 +75,7 @@
                     @include laptop {
                         max-width: rem(350px);
                     }
+                    
                     &__title {
                         margin: 0;
                         margin-left: rem(21px);
@@ -83,13 +113,20 @@
     }
     .right_part {
         width: 50%;
-        background-position: right;
-        padding-left: rem(101px);
+         padding-left: rem(101px);
+       
         @include desctop {
             padding-left: rem(70px);
         }
         @include laptop {
             padding-left: 0;
+        }
+        @include before_phones{
+            width: 53%;
+        }
+        @media(max-width: 600px){
+            width: 0;
+            
         }
         .desc {
             &__tittle {
@@ -101,8 +138,11 @@
                 position: relative;
                 padding-left: rem(16px);
                 @include before_tablets {
-                    margin-top: rem(15px);
+                    margin-top: rem(50px);
                     font-size: rem(20px);
+                }
+                @include tablets{
+                    display: none;
                 }
                 &::before {
                     content: "";
@@ -119,9 +159,15 @@
                 font-family: "PTSansCaptionBold";
                 font-size: rem(16px);
                 margin-bottom: rem(-4px);
+                @include tablets{
+                    display: none;
+                }
             }
             &__item {
                 padding: 0;
+                @include tablets{
+                    display: none;
+                }
                 &__list {
                     list-style: none;
                     position: relative;
@@ -131,6 +177,9 @@
                     color: #fff;
                     margin-top: rem(22px);
                     line-height: rem(15px);
+                    @include tablets{
+                        display: none;
+                    }
                     &::before {
                         content: "";
                         position: absolute;
@@ -162,12 +211,39 @@
         position: absolute;
         transition: .8s;
         cursor: pointer;
+        outline: none;
         @include desctop {
             bottom: rem(150px);
         }
         @include before_tablets {
             bottom: rem(130px);
         }
+        @include tablets{
+            bottom: rem(51px);
+            right: rem(93px);
+        }
+        @media( max-width: 700px){
+            bottom: rem(77px);
+        }
+        @media( max-width: 673px){
+            bottom: rem(85px);
+            right: rem(73px);
+        }
+        @media( max-width: 640px){
+            bottom: rem(95px);
+        }
+        @media(max-width: 600px){
+            right:200px;
+            bottom: 43px;
+        } 
+        @media(max-width: 400px){
+            right:130px;     
+        } 
+        @media(max-width: 360px){
+            right:100px;     
+        } 
+        
+       
         &:hover {
             background-color: darken($pink, 20%);
         }

@@ -2,6 +2,21 @@
     position: relative;
     width: 100%;
     min-height: rem(768px);
+    @media(max-width: 1140px){
+        margin-top: rem(-82px);
+    }
+    @include tablets{
+        margin-top: rem(-13px);
+    }
+    @media(max-width: 600px){
+        margin-top: rem(-25px);
+    }
+    @media( max-width: 640px){
+        margin-top: rem(-45px);
+    }
+    @media(max-width: 600px){
+        margin-top: 0;
+    } 
     #map {
         width: 100%;
         min-height: rem(768px);
@@ -30,6 +45,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include tablets{
+            display: none;
+        } 
         .navbar {
             pointer-events: all;
             display: flex;
@@ -57,6 +75,15 @@
             &__menu {
                 max-width: rem(840px);
                 margin-left: rem(32px);
+            }
+            &__burger{
+                display: none;
+                @include tablets{
+                    display: block;
+                    width:rem(39px);
+                    height:rem(31px);
+                    z-index: 10;
+                }
             }
             &__items {
                 margin-right: rem(4px);

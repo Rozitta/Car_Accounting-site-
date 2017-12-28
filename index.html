@@ -3,22 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="12x12" href="./favicon/._favicon_mac12.png">
+    <link rel="apple-touch-icon" sizes="32x32" href="./favicon/._favicon_mac32.png">
+    <link rel="apple-touch-icon" sizes="48x48" href="./favicon/._favicon_mac48.png">
+    <link rel="icon" type="image/png" href="./favicon/favicon12.png" sizes="12x12">
+    <link rel="icon" type="image/png" href="./favicon/favicon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon/favicon48.png" sizes="48x48">
     <!-- Owl carousel -->
     <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
     <!-- мои стили -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Car Accounting</title>
+    <title>Постановка на учет в Москве</title>
 </head>
 
 <body>
+
+    <!-- шапка для планшетов и ниже и всплывающая менюшка -->
+    <div class="head__tab">
+        <div class=" head__tab--container">
+            <div class="navbar">
+                <div class="navbar__logo">
+                    <img class="navbar__logo__img" src="./img/logo.png" alt="">
+                    <span class="navbar__logo__name navbar__logo__name--white">gai-msk<span class="navbar__logo__name--color">.ru</span>
+                    </span>
+                </div>
+                <img class="navbar__burger" src="./img/burger_white.png" alt="">
+                <span class="telephone telephone--grey">+7 925 067-20-68</span>
+            </div>
+            <div class="burger__menu">
+                <div class="container">
+                    <div class="burger__menu__contacts">
+                        <div class="burger__menu__container">
+                            <span class="telephone">+7 925 067-20-68</span>
+                            <img class="burger__cross" src="./img/cross.png" alt="">
+                        </div>>
+                    </div>
+                    <ul class="burger__items">
+                        <li class="burger__item">
+                            <a class="burger__link" href="#main">Главная</a>
+                        </li>
+                        <li class="burger__item">
+                            <a class="burger__link" href="#work">Как мы работаем</a>
+                        </li>
+                        <li class="burger__item">
+                            <a class="burger__link" href="#services">Услуги</a>
+                        </li>
+                        <li class="burger__item">
+                            <a class="burger__link" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper">
         <!-- секция №1 -->
         <div class="car_accounting" id="main">
-            <div class="container">
-                <!-- шапка сайта -->
+            <!-- шапка сайта -->
+            <div class="container  container--car_accounting">
                 <header>
                     <div class="head">
                         <div class="navbar">
@@ -27,6 +75,7 @@
                                 <span class="navbar__logo__name navbar__logo__name--white">gai-msk<span class="navbar__logo__name--color">.ru</span>
                                 </span>
                             </div>
+
                             <nav class="navbar__menu">
                                 <ul class="navbar__list">
                                     <li class="navbar__items ">
@@ -44,15 +93,20 @@
                                 </ul>
                             </nav>
                         </div>
+                        <!-- <img class="navbar__burger" src="./img/burger_white.png" alt=""> -->
                         <span class="telephone telephone--grey">+7 925 067-20-68</span>
                     </div>
                 </header>
                 <!-- заголовок -->
-                <h1 class="title">
-                    <span class="title__1part">Постановка на учет</span>
-                    <span class="title__2part">за
-                        <span class="title__2part--size">90</span>минут</span>
-                </h1>
+                <div class="title">
+                    <h1 class="title__1part title__1part">Постановка на учет</h1>
+                    <span class="title__des--tabl">в Москве</span>
+                    <div class="title__2part--flex">
+                        <span class="title__2part">за</span>
+                        <span class="title__2part--size title__2part--size--tabl">90</span>
+                        <span class="title__2part title__2part--minutes">минут</span>
+                    </div>
+                </div>
                 <p class="title__des">в Москве</p>
                 <!-- цена -->
                 <div class="price">
@@ -65,289 +119,256 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- секция №2 "Как мы работаем" -->
+    <section class="our-work" id="work">
+        <div class="container">
+            <!-- шапка второго блока -->
+            <div class="head">
+                <div class="navbar">
+                    <div class="navbar__logo">
+                        <img class="navbar__logo__img" src="./img/logo_black.png" alt="">
+                        <span class="navbar__logo__name">gai-msk<span class="navbar__logo__name--color">.ru</span>
+                        </span>
+                    </div>
+                    <nav class="navbar__menu">
+                        <ul class="navbar__list">
+                            <li class="navbar__items ">
+                                <a class="navbar__link navbar__link--active" href="#main" data-action="main_menu">Главная</a>
+                            </li>
+                            <li class="navbar__items">
+                                <a class="navbar__link" href="#work" data-action="work_menu">Как мы работаем</a>
+                            </li>
+                            <li class="navbar__items">
+                                <a class="navbar__link" href="#services" data-action="services_menu">Услуги</a>
+                            </li>
+                            <li class="navbar__items">
+                                <a class="navbar__link" href="#contacts" data-action="contacts_menu">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- <img class="navbar__burger" src="./img/burger_black.png" alt=""> -->
+                <span class="telephone telephone--color ">+7 925 067-20-68</span>
+            </div>
+            <!-- ... -->
+
+            <h2 class="work__style">Как мы работаем?</h2>
+            <div class="work">
+
+                <div class="work__items work__items--left wow zoomIn">
+                    <div class="work__items--circle work__items--circle--left">
+                        <img class="work__items__img" src="img/cursor.png" alt="">
+                    </div>
+                    <p class="work__items__desc">Выбираете необходимую Вам услугу из перечня ниже.</p>
+                </div>
+                <img class="work__rectangle_down" src="img/rectangle_down.png" alt="">
+                <div class="work__items--rectangle">
+                    <img src="img/Rectangle.png" alt="">
+                </div>
+                <div class="work__items work__items--center wow zoomIn">
+                    <div class="work__items--circle work__items--circle--center">
+                        <img class="work__items__img" src="img/phone.png" alt="">
+                    </div>
+
+                    <p class="work__items__desc">Звоните нам на +7 925 067-20-68 мы уточняем все детали и договариваемся о встрече.
+                    </p>
+                </div>
+                <img class="work__rectangle_down" src="img/rectangle_down.png" alt="">
+                <div class="work__items--rectangle">
+                    <img src="./img/Rectangle.png" alt="">
+                </div>
+                <div class="work__items work__items--right wow zoomIn">
+                    <div class="work__items--circle work__items--circle--right">
+                        <img class="work__items__img" src="img/like.png" alt="">
+                    </div>
+                    <p class="work__items__desc">В течени 1-1.5 часов делаем необходимый пакет документов..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ... -->
+
+    <!-- Секция №3 "Услуги" -->
+    <section class="servises" id="services">
+        <div class="container">
+            <div class="head">
+                <div class="navbar">
+                    <div class="navbar__logo">
+                        <img class="navbar__logo__img" src="./img/logo_black.png" alt="">
+                        <span class="navbar__logo__name">gai-msk<span class="navbar__logo__name--color">.ru</span>
+                        </span>
+                    </div>
+                    <nav class="navbar__menu">
+                        <ul class="navbar__list">
+                            <li class="navbar__items ">
+                                <a class="navbar__link navbar__link--active" href="#main" data-action="main_menu">Главная</a>
+                            </li>
+                            <li class="navbar__items">
+                                <a class="navbar__link" href="#work" data-action="work_menu">Как мы работаем</a>
+                            </li>
+                            <li class="navbar__items">
+                                <a class="navbar__link" href="#services" data-action="services_menu">Услуги</a>
+                            </li>
+                            <li class="navbar__items">
+                                <a class="navbar__link" href="#contacts" data-action="contacts_menu">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <img class="navbar__burger" src="./img/burger_red.png" alt="">
+                <span class="telephone telephone--white telephone--servise">+7 925 067-20-68</span>
+            </div>
+            <!-- левый блок -->
+            <div class="parts">
+                <div class="left_part">
+                    <h2 class="servise__title">Услуги</h2>
+
+                    <div class="servise__accordion">
+
+                        <h3 class="servise__accordion__title  servise__accordion__title--active">
+                            <a href="#registration">Постановка на учет</a>
+                        </h3>
+                        <h3 class="servise__accordion__title">
+                            <a href="#removal">Снятие с учета</a>
+                        </h3>
+                        <h3 class="servise__accordion__title">
+                            <a href="#change">Изменение данных собственника авто, замена госзнаков, ПТС и СТС</a>
+                        </h3>
+                        <h3 class="servise__accordion__title">
+                            <a href="#insurance">Страхование, договр купли-продажи, диагностическая карта</a>
+                        </h3>
+                    </div>
+                </div>
 
 
-        <!-- секция №2 "Как мы работаем" -->
-        <section class="our-work" id="work">
-            <div class="container">
-                <!-- шапка второго блока -->
-                <div class="head">
-                    <div class="navbar">
-                        <div class="navbar__logo">
-                            <img class="navbar__logo__img" src="./img/logo_black.png" alt="">
-                            <span class="navbar__logo__name">gai-msk<span class="navbar__logo__name--color">.ru</span>
-                            </span>
-                        </div>
-                        <nav class="navbar__menu">
-                            <ul class="navbar__list">
-                                <li class="navbar__items ">
-                                    <a class="navbar__link navbar__link--active" href="#main" data-action="main_menu">Главная</a>
+
+
+                <div class="right_part">
+
+                    <div class="desc desc-trigger" id="registration">
+                        <h3 class="desc__tittle">Постановка на учет</h3>
+                        <h4 class="desc__name">Список необходимых документов:</h4>
+                        <div class="desc__about ">
+                            <ul class="desc__item">
+                                <li class="desc__item__list">
+                                    <span>паспорта гражданина РФ;</span>
                                 </li>
-                                <li class="navbar__items">
-                                    <a class="navbar__link" href="#work" data-action="work_menu">Как мы работаем</a>
+                                <li class="desc__item__list">
+                                    <span>нотариально заверенной доверенности (для доверенных представителей);</span>
                                 </li>
-                                <li class="navbar__items">
-                                    <a class="navbar__link" href="#services" data-action="services_menu">Услуги</a>
+                                <li class="desc__item__list">
+                                    <span>паспорта транспортного средства;</span>
                                 </li>
-                                <li class="navbar__items">
-                                    <a class="navbar__link" href="#contacts" data-action="contacts_menu">Контакты</a>
+                                <li class="desc__item__list">
+                                    <span>документа, удостоверяющего право собственности на автомототранспортное средство и(или)
+                                        прицеп либо на номерной агрегат;</span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>страхового полиса ОСАГО.</span>
                                 </li>
                             </ul>
-                        </nav>
+                        </div>
                     </div>
-                    <span class="telephone telephone--color ">+7 925 067-20-68</span>
-                </div>
-                <!-- ... -->
 
-                <h2 class="work__style">Как мы работаем?</h2>
-                <div class="work">
-                    <div class="work__items work__items--left">
-                        <div class="work__items--circle work__items--circle--left">
-                            <img class="work__items__img" src="img/cursor.png" alt="">
-                        </div>
-                        <p class="work__items__desc">Выбираете необходимую Вам услугу из перечня ниже.</p>
-                    </div>
-                    <div class="work__items--rectangle">
-                        <img src="img/rectangle.png" alt="">
-                    </div>
-                    <div class="work__items work__items--center">
-                        <div class="work__items--circle work__items--circle--center">
-                            <img class="work__items__img" src="img/phone.png" alt="">
-                        </div>
+                    <div class="desc desc-trigger hidden" id="removal">
+                        <h3 class="desc__tittle">Снятие с учета</h3>
+                        <h4 class="desc__name">Прекращение регистрации транспортного средства Документы:</h4>
+                        <div class="desc__about ">
+                            <ul class="desc__item">
+                                <li class="desc__item__list">
+                                    <span>Государственные регистрационные знаки транспортного средства;</span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Документ, удостоверяющий личность гражданина; </span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Паспорт транспортного средства; </span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Свидетельство о регистрации автомототранспортного средства (прицепа); </span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Регистрационный документ или технический паспорт автомототранспортного средства и (или)
+                                        прицепа договор (купли-продажи, дарения);</span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Документы, выданные органами социальной защиты населения; </span>
+                                </li>
 
-                        <p class="work__items__desc">Звоните нам на +7 925 067-20-68 мы уточняем все детали и договариваемся о встрече.
-                        </p>
-                    </div>
-                    <div class="work__items--rectangle">
-                        <img src="./img/rectangle.png" alt="">
-                    </div>
-                    <div class="work__items work__items--right">
-                        <div class="work__items--circle work__items--circle--right">
-                            <img class="work__items__img" src="img/like.png" alt="">
+                            </ul>
                         </div>
-                        <p class="work__items__desc">В течени 1-1.5 часов делаем необходимый пакет документов..
-                        </p>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- ... -->
 
-        <!-- Секция №3 "Услуги" -->
-        <section class="servises" id="services">
-            <div class="container">
-                <div class="head">
-                    <div class="navbar">
-                        <div class="navbar__logo">
-                            <img class="navbar__logo__img" src="./img/logo_black.png" alt="">
-                            <span class="navbar__logo__name">gai-msk<span class="navbar__logo__name--color">.ru</span>
-                            </span>
-                        </div>
-                        <nav class="navbar__menu">
-                            <ul class="navbar__list">
-                                <li class="navbar__items ">
-                                    <a class="navbar__link navbar__link--active" href="#main" data-action="main_menu">Главная</a>
+                    <div class="desc desc-trigger hidden" id="change">
+                        <h3 class="desc__tittle">Изменение данных собственника, изменение данных авто, замена госзнаков, ПТС и СТС</h3>
+                        <h4 class="desc__name">Список необходимых документов:</h4>
+                        <div class="desc__about ">
+                            <ul class="desc__item">
+                                <li class="desc__item__list">
+                                    <span>паспорта гражданина РФ;</span>
                                 </li>
-                                <li class="navbar__items">
-                                    <a class="navbar__link" href="#work" data-action="work_menu">Как мы работаем</a>
+                                <li class="desc__item__list">
+                                    <span>нотариально заверенной доверенности (для доверенных представителей);</span>
                                 </li>
-                                <li class="navbar__items">
-                                    <a class="navbar__link" href="#services" data-action="services_menu">Услуги</a>
+                                <li class="desc__item__list">
+                                    <span>паспорта транспортного средства;</span>
                                 </li>
-                                <li class="navbar__items">
-                                    <a class="navbar__link" href="#contacts" data-action="contacts_menu">Контакты</a>
+                                <li class="desc__item__list">
+                                    <span>Регистрационное свидетельство средства или технического паспорта автомототранспортного
+                                        средства или прицепа (СТС);</span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Документ, удостоверяющий право собственности на автомототранспортное средство и(или)
+                                        прицеп либо на номерной агрегат*;</span>
                                 </li>
                             </ul>
-                        </nav>
-                    </div>
-                    <span class="telephone telephone--white telephone--servise">+7 925 067-20-68</span>
-                </div>
-                <!-- левый блок -->
-                <div class="parts">
-                    <div class="left_part">
-                        <h2 class="servise__title">Услуги</h2>
-
-                        <div class="servise__accordion">
-
-                            <h3 class="servise__accordion__title  servise__accordion__title--active">
-                                <a href="#registration">Постановка на учет</a>
-                            </h3>
-                            <h3 class="servise__accordion__title">
-                                <a href="#removal">Снятие с учета</a>
-                            </h3>
-                            <h3 class="servise__accordion__title">
-                                <a href="#change">Изменение данных собственника авто, замена госзнаков, ПТС и СТС</a>
-                            </h3>
-                            <h3 class="servise__accordion__title">
-                                <a href="#insurance">Страхование, договр купли-продажи, диагностическая карта</a>
-                            </h3>
                         </div>
                     </div>
 
+                    <div class="desc desc-trigger hidden" id="insurance">
+                        <h3 class="desc__tittle">Страхование, договор купли-продажи</h3>
+                        <h4 class="desc__name">Документы для составления договора Купли-продажи: </h4>
+                        <div class="desc__about ">
+                            <ul class="desc__item">
+                                <li class="desc__item__list">
+                                    <span>Паспорт каждого из участников договора</span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Паспорт транспортного средств</span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Дополнительные документы от продавца, если существует иной вид владения транспорта:</span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Договор дарения;</span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Документы, выданные органами социальной защиты населения; </span>
+                                </li>
+                                <li class="desc__item__list">
+                                    <span>Решения судов, постановления органов исполнения судебных актов;</span>
+                                </li>
 
-
-
-                    <div class="right_part">
-
-                        <div class="desc desc-trigger" id="registration">
-                            <h3 class="desc__tittle">Постановка на учет</h3>
-                            <h4 class="desc__name">Список необходимых документов:</h4>
-                            <div class="desc__about ">
-                                <ul class="desc__item">
-                                    <li class="desc__item__list">
-                                        <span>паспорта гражданина РФ;</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>нотариально заверенной доверенности (для доверенных представителей);</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>паспорта транспортного средства;</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>документа, удостоверяющего право собственности на автомототранспортное средство и(или)
-                                            прицеп либо на номерной агрегат;</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>страхового полиса ОСАГО.</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
-
-                        <div class="desc desc-trigger hidden" id="removal">
-                            <h3 class="desc__tittle">Снятие с учета</h3>
-                            <h4 class="desc__name">Прекращение регистрации транспортного средства Документы:</h4>
-                            <div class="desc__about ">
-                                <ul class="desc__item">
-                                    <li class="desc__item__list">
-                                        <span>Государственные регистрационные знаки транспортного средства;</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Документ, удостоверяющий личность гражданина; </span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Паспорт транспортного средства; </span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Свидетельство о регистрации автомототранспортного средства (прицепа); </span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Регистрационный документ или технический паспорт автомототранспортного средства и
-                                            (или) прицепа договор (купли-продажи, дарения);</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Документы, выданные органами социальной защиты населения; </span>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="desc desc-trigger hidden" id="change">
-                            <h3 class="desc__tittle">Изменение данных собственника, изменение данных авто, замена госзнаков, ПТС и СТС</h3>
-                            <h4 class="desc__name">Список необходимых документов:</h4>
-                            <div class="desc__about ">
-                                <ul class="desc__item">
-                                    <li class="desc__item__list">
-                                        <span>паспорта гражданина РФ;</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>нотариально заверенной доверенности (для доверенных представителей);</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>паспорта транспортного средства;</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Регистрационное свидетельство средства или технического паспорта автомототранспортного
-                                            средства или прицепа (СТС);</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Документ, удостоверяющий право собственности на автомототранспортное средство и(или)
-                                            прицеп либо на номерной агрегат*;</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="desc desc-trigger hidden" id="insurance">
-                            <h3 class="desc__tittle">Страхование, договор купли-продажи</h3>
-                            <h4 class="desc__name">Документы для составления договора Купли-продажи: </h4>
-                            <div class="desc__about ">
-                                <ul class="desc__item">
-                                    <li class="desc__item__list">
-                                        <span>Паспорт каждого из участников договора</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Паспорт транспортного средств</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Дополнительные документы от продавца, если существует иной вид владения транспорта:</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Договор дарения;</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Документы, выданные органами социальной защиты населения; </span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>Решения судов, постановления органов исполнения судебных актов;</span>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                        <button class="button">Подробнее</button>
                     </div>
+
+                    <button class="button">Подробнее</button>
                 </div>
             </div>
-        </section>
-        <!-- ... -->
+        </div>
+    </section>
+    <!-- ... -->
 
-        <!-- Секция №4 "Карта" -->
-        <section class="map_conteiner" id="contacts">
-            <div id="map"></div>
-            <div class="map__style">
-                <div class="container">
-                    <!-- шапка сайта -->
-                    <div class="head">
-                        <div class="navbar">
-                            <div class="navbar__logo">
-                                <img class="navbar__logo__img" src="./img/logo.png" alt="">
-                                <span class="navbar__logo__name navbar__logo__name--white">gai-msk<span class="navbar__logo__name--color">.ru</span>
-                                </span>
-                            </div>
-                            <nav class="navbar__menu">
-                                <ul class="navbar__list">
-                                    <li class="navbar__items ">
-                                        <a class="navbar__link navbar__link--white navbar__link--active" href="#main" data-action="main_menu">Главная</a>
-                                    </li>
-                                    <li class="navbar__items">
-                                        <a class="navbar__link navbar__link--white" href="#work" data-action="work_menu">Как мы работаем</a>
-                                    </li>
-                                    <li class="navbar__items">
-                                        <a class="navbar__link navbar__link--white" href="#services" data-action="services_menu">Услуги</a>
-                                    </li>
-                                    <li class="navbar__items">
-                                        <a class="navbar__link navbar__link--white" href="#contacts" data-action="contacts_menu">Контакты</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <span class="telephone telephone--white">+7 925 067-20-68</span>
-                    </div>
-                    <div class="contact">
-                        <h2 class="contact__name">Контакты</h2>
-                        <p class="contact__street">улица Твардовского, 8 корпус 5, Москва</p>
-                        <span class="contact__pfone">+7 925 067-20-68</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- подвал сайта -->
-        <footer>
+    <!-- Секция №4 "Карта" -->
+    <section class="map_conteiner" id="contacts">
+        <div id="map"></div>
+        <div class="map__style">
             <div class="container">
+                <!-- шапка сайта -->
                 <div class="head">
                     <div class="navbar">
                         <div class="navbar__logo">
@@ -358,510 +379,493 @@
                         <nav class="navbar__menu">
                             <ul class="navbar__list">
                                 <li class="navbar__items ">
-                                    <a class="navbar__link navbar__link--white navbar__link--active" href="#main">Главная</a>
+                                    <a class="navbar__link navbar__link--white navbar__link--active" href="#main" data-action="main_menu">Главная</a>
                                 </li>
                                 <li class="navbar__items">
-                                    <a class="navbar__link navbar__link--white" href="#work">Как мы работаем</a>
+                                    <a class="navbar__link navbar__link--white" href="#work" data-action="work_menu">Как мы работаем</a>
                                 </li>
                                 <li class="navbar__items">
-                                    <a class="navbar__link navbar__link--white" href="#services">Услуги</a>
+                                    <a class="navbar__link navbar__link--white" href="#services" data-action="services_menu">Услуги</a>
                                 </li>
                                 <li class="navbar__items">
-                                    <a class="navbar__link navbar__link--white" href="#contacts">Контакты</a>
+                                    <a class="navbar__link navbar__link--white" href="#contacts" data-action="contacts_menu">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
+                    <!-- <img class="navbar__burger" src="./img/burger_white.png" alt=""> -->
                     <span class="telephone telephone--white">+7 925 067-20-68</span>
                 </div>
+                <div class="contact">
+                    <h2 class="contact__name">Контакты</h2>
+                    <p class="contact__street">улица Твардовского, 8 корпус 5, Москва</p>
+                    <span class="contact__pfone">+7 925 067-20-68</span>
+                </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <!-- слайдер -->
-        <div class="slider ">
-            <div class="slider-wrap">
-                <div class="owl-controls">
-                        <div class="owl-nav">
-                        </div>
-                        <div class="owl-dots">
-                            <div class="owl-dot active">
-                                <span>01</span>
-                            </div>
-                            <div class="owl-dot">
-                                <span>02</span>
-                            </div>
-                            <div class="owl-dot">
-                                <span>03</span>
-                            </div>
-                            <div class="owl-dot">
-                                <span>04</span>
-                            </div>
-                        </div>
+    <!-- подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="head">
+                <div class="navbar">
+                    <div class="navbar__logo">
+                        <img class="navbar__logo__img" src="./img/logo.png" alt="">
+                        <span class="navbar__logo__name navbar__logo__name--white">gai-msk<span class="navbar__logo__name--color">.ru</span>
+                        </span>
                     </div>
-        <div class="container container--slider">  
-                <img class="slider__list__arrow slider__list__close" src="./img/arrow.png">
-                <img class="slider__list__cross slider__list__close" src="./img/cross.png">
-        <div class="slider__list--wrap">
-           
-            <div class="owl-carousel">
+                    <nav class="navbar__menu">
+                        <ul class="navbar__list">
+                            <li class="navbar__items ">
+                                <a class="navbar__link navbar__link--white navbar__link--active" href="#main">Главная</a>
+                            </li>
+                            <li class="navbar__items">
+                                <a class="navbar__link navbar__link--white" href="#work">Как мы работаем</a>
+                            </li>
+                            <li class="navbar__items">
+                                <a class="navbar__link navbar__link--white" href="#services">Услуги</a>
+                            </li>
+                            <li class="navbar__items">
+                                <a class="navbar__link navbar__link--white" href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <span class="telephone telephone--white">+7 925 067-20-68</span>
+            </div>
+        </div>
+    </footer>
 
-                <!-- слайдер 1й "Постановка на учет" -->
-                <div class="slider__list">
-                    <div class="slider__item__desc ">
-                        <div class="desc">
-                            <h3 class="desc__tittle">Постановка на учет</h3>
-                            <h4 class="desc__name">Список необходимых документов:</h4>
-                            <div class="desc__about ">
-                                <ul class="desc__item">
-                                    <li class="desc__item__list">
-                                        <span>паспорта гражданина РФ;</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>нотариально заверенной доверенности (для доверенных представителей);</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>паспорта транспортного средства;</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>документа, удостоверяющего право собственности на автомототранспортное средство
-                                            и(или) прицеп либо на номерной агрегат;</span>
-                                    </li>
-                                    <li class="desc__item__list">
-                                        <span>страхового полиса ОСАГО.</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+    <!-- слайдер -->
+    <div class="slider ">
+        <div class="slider-wrap">
+            <div class="owl-controls">
+                <div class="owl-nav">
+                </div>
+                <div class="owl-dots">
+
+                    <div class="owl-dot active">
+                        <span>01</span>
+                    </div>
+                    <div class="owl-dot">
+                        <span>02</span>
+                    </div>
+                    <div class="owl-dot">
+                        <span>03</span>
+                    </div>
+                    <div class="owl-dot">
+                        <span>04</span>
                     </div>
                 </div>
-                <!-- ... -->
+            </div>
+            <div class="container container--slider">
+                <img class="slider__list__arrow slider__list__close" src="./img/arrow.png" alt="">
+                <img class="slider__list__cross slider__list__close" src="./img/cross.png" alt="">
+                <div class="slider__list--wrap">
 
-                <!-- слайдер 2 й "снятие с учета" -->
-                <div class="slider__list">
-                    <div class="slider__item__desc ">
-                        <div class="desc">
-                            <h3 class="desc__tittle">Снятие с учета</h3>
-                            <div class="description">
-                                <div class="description__about">
-                                    <h4 class="desc__name">Прекращение регистрации транспортного средства Документы:</h4>
-                                    <div class="desc__about ">
-                                        <ul class="desc__item">
-                                            <li class="desc__item__list">
-                                                <span>Государственные регистрационные знаки транспортного средства;</span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Документ, удостоверяющий личность гражданина; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Паспорт транспортного средства; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Свидетельство о регистрации автомототранспортного средства (прицепа);
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Регистрационный документ или технический паспорт автомототранспортного
-                                                    средства и (или) прицепа договор (купли-продажи, дарения);</span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Документы, выданные органами социальной защиты населения; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Решения судов, постановления органов исполнения судебных актов;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Выписки из передаточных актов (касающиеся ТС); </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Выписки из разделительного баланса (касающиеся ТС); </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Свидетельства о праве на наследство; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Заверенной выписки (копии) протокола тиражной комиссии или правил проведения
-                                                    лотереи и акт передачи ТС; иные договора и документы,
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>удостоверяющие право собственности на ТС. </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="description__about">
-                                    <h4 class="desc__name">Снятие с регистрационного учета автомототранспортного средства в связи с вывозом
-                                        за пределы Российской Федерации на постоянное пребывание Документы:</h4>
-                                    <div class="desc__about ">
-                                        <ul class="desc__item">
-                                            <li class="desc__item__list">
-                                                <span>паспорт гражданина страны нового владельца ТС; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>нотариально заверенный перевод паспорта, если в нем данные не дублируются
-                                                    на русском языке; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Паспорта транспортного средства; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>регистрационный документ или технического паспорта автомототранспортного
-                                                    средства или прицепа (СТС);
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>документ, удостоверяющий право собственности на автомототранспортное
-                                                    средство и(или) прицеп либо на номерной агрегат*; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>страховой полис ОСАГО (на транзит ТС) * </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>договор (купли-продажи, дарения); </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>документы, выданные органами социальной защиты населения; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>решения судов, постановления органов исполнения судебных актов;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>выписки из передаточных актов (касающиеся ТС); </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>выписки из разделительного баланса (касающиеся ТС);
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>свидетельства о праве на наследство; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>заверенной выписки (копии) протокола тиражной комиссии или правил проведения
-                                                    лотереи и акт передачи ТС; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>иные договора и документы, удостоверяющие право собственности на ТС.
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--star ">
-                                                <span>договора (купли-продажи, дарения);
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>документов, выдаваемых органами социальной защиты населения;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>решения судов, постановления органов исполнения судебных актов;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>выписки из передаточных актов (касающиеся ТС);
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>выписки из разделительного баланса (касающиеся ТС);
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>свидетельства о праве на наследство;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>заверенной выписки протокола тиражной комиссии или правил проведения
-                                                    лотереи и акт передачи ТС;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>заверенной выписки протокола тиражной комиссии или правил проведения
-                                                    лотереи и акт передачи ТС;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>иных договоров и документов, удостоверяющих право собственности на ТС.
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- .... -->
+                    <div class="owl-carousel">
 
-                <!-- слайдер 3 й "Изменение данных собственника" -->
-                <div class="slider__list">
-                    <div class="slider__item__desc ">
-                        <div class="desc">
-                            <h3 class="desc__tittle">Изменение данных собственника, изменение данных авто, замена госзнаков, ПТС и СТС</h3>
-                            <div class="description">
-                                <div class="description__about">
+                        <!-- слайдер 1й "Постановка на учет" -->
+                        <div class="slider__list">
+                            <div class="slider__item__desc ">
+                                <div class="desc">
+                                    <h3 class="desc__tittle">Постановка на учет</h3>
                                     <h4 class="desc__name">Список необходимых документов:</h4>
                                     <div class="desc__about ">
                                         <ul class="desc__item">
                                             <li class="desc__item__list">
-                                                <span>Паспорт гражданина РФ;</span>
+                                                <span>паспорта гражданина РФ;</span>
                                             </li>
                                             <li class="desc__item__list">
-                                                <span>Нотариально заверенная доверенность (для доверенных представителей);
-                                                </span>
+                                                <span>нотариально заверенной доверенности (для доверенных представителей);</span>
                                             </li>
                                             <li class="desc__item__list">
-                                                <span>Паспорт транспортного средства; </span>
+                                                <span>паспорта транспортного средства;</span>
                                             </li>
                                             <li class="desc__item__list">
-                                                <span>Регистрационное свидетельство средства или технического паспорта автомототранспортного
-                                                    средства или прицепа (СТС);
-                                                </span>
+                                                <span>документа, удостоверяющего право собственности на автомототранспортное средство
+                                                    и(или) прицеп либо на номерной агрегат;</span>
                                             </li>
                                             <li class="desc__item__list">
-                                                <span>Документ, удостоверяющий право собственности на автомототранспортное
-                                                    средство и(или) прицеп либо на номерной агрегат*;</span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Свидетельство о безопасности конструкции транспортного средства**;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Свидетельство о браке*** </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="description__about">
-                                    <div class="desc__about ">
-                                        <ul class="desc__item">
-                                            <li class="desc__item__list--star desc__item__list--star--one ">
-                                                <span>договора (купли-продажи, дарения);
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>документов, выдаваемых органами социальной защиты населения;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>решения судов, постановления органов исполнения судебных актов;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>выписки из передаточных актов (касающиеся ТС);
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>выписки из разделительного баланса (касающиеся ТС);
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>свидетельства о праве на наследство;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>заверенной выписки протокола тиражной комиссии или правил проведения
-                                                    лотереи и акт передачи ТС;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>заверенной выписки протокола тиражной комиссии или правил проведения
-                                                    лотереи и акт передачи ТС;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--underStar ">
-                                                <span>иных договоров и документов, удостоверяющих право собственности на ТС.
-                                                </span>
-                                            </li>
-
-                                            <li class="desc__item__list--star
-                                            desc__item__list--star--two">
-                                                <span>предоставляется для транспортного средства, изготовленного в Российской
-                                                    Федерации в условиях серийного производства, в конструкцию которого
-                                                    в индивидуальном порядке были внесены изменения до выпуска в обращение,
-                                                    или изготовленного в Российской Федерации в индивидуальном порядке
-                                                    из сборочного комплекта, или являющегося результатом индивидуального
-                                                    технического творчества, или выпускаемого в обращение из числа ранее
-                                                    поставленных по государственному оборонному заказу.
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list--star desc__item__list--star--three ">
-                                                <span>при изменении фамилии
-                                                </span>
+                                                <span>страхового полиса ОСАГО.</span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- .... -->
+                        <!-- ... -->
 
-                <!-- слайдер №4 "страхование" -->
-                <div class="slider__list">
-                    <div class="slider__item__desc ">
-                        <div class="desc">
-                            <h3 class="desc__tittle">Страхование, договор купли-продажи</h3>
-                            <div class="description">
-                                <div class="description__about">
-                                    <h4 class="desc__name">Документы для составления договора Купли-продажи: </h4>
-                                    <div class="desc__about ">
-                                        <ul class="desc__item">
-                                            <li class="desc__item__list">
-                                                <span>Паспорт каждого из участников договора</span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Паспорт транспортного средств </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Паспорт транспортного средства; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Дополнительные документы от продавца, если существует иной вид владения
-                                                    транспорта:
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Договор дарения;</span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Документы, выданные органами социальной защиты населения; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Решения судов, постановления органов исполнения судебных актов;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Выписки из передаточных актов (касающиеся ТС); </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Выписки из разделительного баланса (касающиеся ТС); </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Свидетельства о праве на наследство; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Заверенной выписки (копии) протокола тиражной комиссии или правил проведения
-                                                    лотереи и акт передачи ТС;
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Иные договора и документы, удостоверяющие право собственности на ТС.
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="description__about">
-                                    <h4 class="desc__name">Документы для составления страхового полиса ОСАГО:</h4>
-                                    <div class="desc__about ">
-                                        <ul class="desc__item">
-                                            <li class="desc__item__list">
-                                                <span>Паспорт гражданина страны владельца ТС; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Водительское удостоверение; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Временная регистрация владельца; </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Документ подтверждающий права владения ТС (договор купли-продажи);
-                                                </span>
-                                            </li>
-                                            <li class="desc__item__list">
-                                                <span>Диагностическая карта ТС </span>
-                                            </li>
-                                        </ul>
+                        <!-- слайдер 2 й "снятие с учета" -->
+                        <div class="slider__list">
+                            <div class="slider__item__desc ">
+                                <div class="desc">
+                                    <h3 class="desc__tittle">Снятие с учета</h3>
+                                    <div class="description">
+                                        <div class="description__about">
+                                            <h4 class="desc__name">Прекращение регистрации транспортного средства Документы:</h4>
+                                            <div class="desc__about ">
+                                                <ul class="desc__item">
+                                                    <li class="desc__item__list">
+                                                        <span>Государственные регистрационные знаки транспортного средства;</span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Документ, удостоверяющий личность гражданина; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Паспорт транспортного средства; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Свидетельство о регистрации автомототранспортного средства (прицепа);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Регистрационный документ или технический паспорт автомототранспортного
+                                                            средства и (или) прицепа договор (купли-продажи, дарения);</span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Документы, выданные органами социальной защиты населения; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Решения судов, постановления органов исполнения судебных актов;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Выписки из передаточных актов (касающиеся ТС); </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Выписки из разделительного баланса (касающиеся ТС); </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Свидетельства о праве на наследство; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Заверенной выписки (копии) протокола тиражной комиссии или правил
+                                                            проведения лотереи и акт передачи ТС; иные договора и документы,
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>удостоверяющие право собственности на ТС. </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="description__about">
+                                            <h4 class="desc__name">Снятие с регистрационного учета автомототранспортного средства в связи с вывозом
+                                                за пределы Российской Федерации на постоянное пребывание Документы:</h4>
+                                            <div class="desc__about ">
+                                                <ul class="desc__item">
+                                                    <li class="desc__item__list">
+                                                        <span>паспорт гражданина страны нового владельца ТС; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>нотариально заверенный перевод паспорта, если в нем данные не дублируются
+                                                            на русском языке; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Паспорта транспортного средства; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>регистрационный документ или технического паспорта автомототранспортного
+                                                            средства или прицепа (СТС);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>документ, удостоверяющий право собственности на автомототранспортное
+                                                            средство и(или) прицеп либо на номерной агрегат*; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>страховой полис ОСАГО (на транзит ТС) * </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>договор (купли-продажи, дарения); </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>документы, выданные органами социальной защиты населения; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>решения судов, постановления органов исполнения судебных актов;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>выписки из передаточных актов (касающиеся ТС); </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>выписки из разделительного баланса (касающиеся ТС);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>свидетельства о праве на наследство; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>заверенной выписки (копии) протокола тиражной комиссии или правил
+                                                            проведения лотереи и акт передачи ТС; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>иные договора и документы, удостоверяющие право собственности на
+                                                            ТС.
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--star ">
+                                                        <span>договора (купли-продажи, дарения);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>документов, выдаваемых органами социальной защиты населения;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>решения судов, постановления органов исполнения судебных актов;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>выписки из передаточных актов (касающиеся ТС);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>выписки из разделительного баланса (касающиеся ТС);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>свидетельства о праве на наследство;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>заверенной выписки протокола тиражной комиссии или правил проведения
+                                                            лотереи и акт передачи ТС;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>заверенной выписки протокола тиражной комиссии или правил проведения
+                                                            лотереи и акт передачи ТС;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>иных договоров и документов, удостоверяющих право собственности на
+                                                            ТС.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- .... -->
+
+                        <!-- слайдер 3 й "Изменение данных собственника" -->
+                        <div class="slider__list">
+                            <div class="slider__item__desc ">
+                                <div class="desc">
+                                    <h3 class="desc__tittle">Изменение данных собственника, изменение данных авто, замена госзнаков, ПТС и СТС</h3>
+                                    <div class="description">
+                                        <div class="description__about">
+                                            <h4 class="desc__name">Список необходимых документов:</h4>
+                                            <div class="desc__about ">
+                                                <ul class="desc__item">
+                                                    <li class="desc__item__list">
+                                                        <span>Паспорт гражданина РФ;</span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Нотариально заверенная доверенность (для доверенных представителей);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Паспорт транспортного средства; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Регистрационное свидетельство средства или технического паспорта
+                                                            автомототранспортного средства или прицепа (СТС);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Документ, удостоверяющий право собственности на автомототранспортное
+                                                            средство и(или) прицеп либо на номерной агрегат*;</span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Свидетельство о безопасности конструкции транспортного средства**;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Свидетельство о браке*** </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="description__about">
+                                            <div class="desc__about ">
+                                                <ul class="desc__item">
+                                                    <li class="desc__item__list--star desc__item__list--star--one ">
+                                                        <span>договора (купли-продажи, дарения);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>документов, выдаваемых органами социальной защиты населения;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>решения судов, постановления органов исполнения судебных актов;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>выписки из передаточных актов (касающиеся ТС);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>выписки из разделительного баланса (касающиеся ТС);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>свидетельства о праве на наследство;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>заверенной выписки протокола тиражной комиссии или правил проведения
+                                                            лотереи и акт передачи ТС;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>заверенной выписки протокола тиражной комиссии или правил проведения
+                                                            лотереи и акт передачи ТС;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--underStar ">
+                                                        <span>иных договоров и документов, удостоверяющих право собственности на
+                                                            ТС.
+                                                        </span>
+                                                    </li>
+
+                                                    <li class="desc__item__list--star
+                                                    desc__item__list--star--two">
+                                                        <span>предоставляется для транспортного средства, изготовленного в Российской
+                                                            Федерации в условиях серийного производства, в конструкцию которого
+                                                            в индивидуальном порядке были внесены изменения до выпуска в
+                                                            обращение, или изготовленного в Российской Федерации в индивидуальном
+                                                            порядке из сборочного комплекта, или являющегося результатом
+                                                            индивидуального технического творчества, или выпускаемого в обращение
+                                                            из числа ранее поставленных по государственному оборонному заказу.
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list--star desc__item__list--star--three ">
+                                                        <span>при изменении фамилии
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .... -->
+
+                        <!-- слайдер №4 "страхование" -->
+                        <div class="slider__list">
+                            <div class="slider__item__desc ">
+                                <div class="desc">
+                                    <h3 class="desc__tittle">Страхование, договор купли-продажи</h3>
+                                    <div class="description">
+                                        <div class="description__about">
+                                            <h4 class="desc__name">Документы для составления договора Купли-продажи: </h4>
+                                            <div class="desc__about ">
+                                                <ul class="desc__item">
+                                                    <li class="desc__item__list">
+                                                        <span>Паспорт каждого из участников договора</span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Паспорт транспортного средств </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Паспорт транспортного средства; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Дополнительные документы от продавца, если существует иной вид владения
+                                                            транспорта:
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Договор дарения;</span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Документы, выданные органами социальной защиты населения; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Решения судов, постановления органов исполнения судебных актов;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Выписки из передаточных актов (касающиеся ТС); </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Выписки из разделительного баланса (касающиеся ТС); </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Свидетельства о праве на наследство; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Заверенной выписки (копии) протокола тиражной комиссии или правил
+                                                            проведения лотереи и акт передачи ТС;
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Иные договора и документы, удостоверяющие право собственности на
+                                                            ТС.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="description__about">
+                                            <h4 class="desc__name">Документы для составления страхового полиса ОСАГО:</h4>
+                                            <div class="desc__about ">
+                                                <ul class="desc__item">
+                                                    <li class="desc__item__list">
+                                                        <span>Паспорт гражданина страны владельца ТС; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Водительское удостоверение; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Временная регистрация владельца; </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Документ подтверждающий права владения ТС (договор купли-продажи);
+                                                        </span>
+                                                    </li>
+                                                    <li class="desc__item__list">
+                                                        <span>Диагностическая карта ТС </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ... -->
                     </div>
                 </div>
-                <!-- ... -->
             </div>
         </div>
     </div>
-</div>
-</div>
-    </div>
+
+
 
     <!-- Подключение джеквери -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
-      <!-- Owl carousel -->
-      <script src="./owlcarousel/owl.carousel.js"></script>
-      <!-- код скрипта слайдер -->
-      <script src="./js/slider.js"></script> 
-      <!-- код скрипта раздела servises -->
-      <script src="./js/servises.js"></script>
-
-        <script>
-        // активный пункт меню
-        var blocks = []
-        $(window).scroll(function () {
-            var scrolledpx = parseInt($(window).scrollTop()) + (parseInt($(window).height()) / 1.5);
-            var id = '';
-            for (var i = 0; i < blocks.length; i++) {
-
-                if (scrolledpx >= blocks[i].position.top) {
-                    id = blocks[i].id;
-                    if (blocks[i + 1] !== undefined && scrolledpx < blocks[i + 1].position.top) {
-                        id = blocks[i].id;
-                    }
-                }
-            };
-            $('.navbar__link').removeClass("navbar__link--active");
-            $("[data-action='" + id + "_menu']").addClass("navbar__link--active");
-
-        });
-
-        $(function () {
-            blocks.push({
-                id: 'main',
-                position: $('#main').offset()
-            })
-            blocks.push({
-                id: 'work',
-                position: $('#work').offset()
-            })
-            blocks.push({
-                id: 'services',
-                position: $('#services').offset()
-            })
-            blocks.push({
-                id: 'contacts',
-                position: $('#contacts').offset()
-            })
-
-        });
-
-        //плавный переход по ссылке
-        $(document).ready(function () {
-            $(".navbar__menu").each(function (index, elem) {
-                $(elem).on("click", "a", function (event) {
-                    //отменяем стандартную обработку нажатия по ссылке
-                    event.preventDefault();
-                    //забираем идентификатор бока с атрибута href
-                    var id = $(this).attr('href'),
-                        //узнаем высоту от начала страницы до блока на который ссылается якорь
-                        top = $(id).offset().top;
-                    //анимируем переход на расстояние - top за 1500 мс
-                    $('body,html').animate({
-                        scrollTop: top
-                    }, 800);
-                });
-            })
-        });
-
-       
-
-    </script>
-
-
-
+    <!-- Owl carousel -->
+    <script src="./owlcarousel/owl.carousel.js"></script>
+    <!-- код скрипта слайдер -->
+    <script src="./js/slider.js"></script>
+    <!-- код скрипта раздела servises -->
+    <script src="./js/servises.js"></script>
+    <!-- активный пункт меню -->
+    <script src="./js/menu.js"></script>
+    <!-- гугл карта -->
     <script src="./js/googleMap.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhG_pzTkjY4tRvVZ5tfU77AeO-Voo5JFQ&callback=initMap">
     </script>

@@ -197,7 +197,7 @@ function initMap() {
             lng: 37.388749
         },
         image: './img/marker.png',
-        info: 'bla bla bla'
+        //info: 'bla bla bla'
     });
 
     function addMarker(properties) {
