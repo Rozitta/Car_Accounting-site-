@@ -69,8 +69,9 @@
  });
  // закрытие меню бургера
  $('.burger__cross').on('click', function () {
-     $('.burger__menu').css('display', 'none');
+     $('.burger__menu').slideUp(600);
  });
  $('.burger__item').on('click', function () {
-     $('.burger__menu').css('display', 'none');
+     $('.burger__menu').slideUp(600);
+    
  });

@@ -37,6 +37,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            transition: .8s;
+            &:hover{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
             @include tablets{
                 margin-top: 18px;
             }
@@ -58,23 +63,23 @@
                 position: relative;
                 transition: .8s;
                 &:hover{
-                    -webkit-transform: scale(1.15);
-                    transform: scale(1.15);
+                    -webkit-transform: scale(1.07);
+                    transform: scale(1.07);
                 }
                 &--left{
-                    margin-left:rem(35px);
+                    // margin-left:rem(35px);
                     @include laptop{
                         margin-left: 0;
                     }
                 }
                 &--right{
-                    margin-right:rem(40px);
+                    // margin-right:rem(40px);
                     @include laptop{
                         margin-right: 0;
                     }
                 }
                 &--center{
-                   margin-right: rem(6px);
+                //    margin-right: rem(6px);
                    @include laptop{
                        margin-right: 0;
                    }

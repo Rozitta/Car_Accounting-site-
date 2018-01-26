@@ -83,6 +83,8 @@
                         position: relative;
                         cursor: pointer;
                         font-weight: normal;
+                        
+                        
                         &::before {
                             content: "";
                             position: absolute;
@@ -96,8 +98,13 @@
                             font-family: "PTSansCaptionRegular";
                             font-size: rem(18px);
                             color: $dark_grey;
+                            transition: .8s;
+                            display: block;
+                            &:hover{
+                                color:$pink;
+                            }
                         }
-                        &--active {
+                        &--active, &--hover {
                             a {
                                 font-family: "PTSansCaptionBold";
                             }
@@ -129,6 +136,10 @@
             
         }
         .desc {
+            &-trigger{
+                transition: all 0.8s;
+                max-height: auto;
+            }
             &__tittle {
                 font-size: rem(24px);
                 color: #fff;
@@ -245,10 +256,20 @@
         
        
         &:hover {
-            background-color: darken($pink, 20%);
+            background-color: #fff;
+            color:$pink;
         }
     }
     .hidden {
         display: none;
     }
 }
+
+
+.hidden--hoverJs{
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    
+}
+
