@@ -1,0 +1,418 @@
+.registration__part {
+    min-height: 940px;
+    @include desctop {
+        min-height: 826px;
+    }
+    @media(max-width: 864px) {
+        min-height: 757px;
+    }
+    @include before_tablets {
+        min-height: 760px;
+    }
+    &__title {
+        font-family: 'Baufra-Bold';
+        font-size: rem(36px);
+        color: $dark_grey;
+        text-align: center;
+        margin: 0;
+        padding-top: 93px;
+        @include tablets {
+            padding-top: 63px;
+        }
+    }
+    &__link {
+        max-width: 330px;
+        font-family: "PTSansCaptionRegular";
+        font-size: rem(18px);
+        color: $pink;
+        text-align: center;
+        display: block;
+        padding-top: 3px;
+        margin-left: 3px;
+        margin-bottom: 31px;
+        text-decoration: none;
+        position: relative;
+        margin: 0 auto;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            left: 0;
+            bottom: 2px;
+            background-color: $pink;
+        }
+    }
+}
+
+.registration__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include laptop {
+        margin-top: 30px;
+    }
+    @include tablets {
+        flex-direction: column;
+    }
+    &--reverse {
+        @include tablets {
+            flex-direction: column-reverse;
+            margin-top: 0;
+        }
+    }
+    &__desc {
+        max-width: 550px;
+        font-family: "PTSansCaptionRegular";
+        font-size: 1.125rem;
+        line-height: 30px;
+        margin: 0;
+        margin-top: -2px;
+        margin-left: 4px;
+        @include laptop {
+            font-size: rem(17px);
+        }
+        @include before_tablets {
+            font-size: rem(16px);
+        }
+        @include tablets {
+            font-size: rem(18px);
+            max-width: 100%;
+            margin-left: 0;
+        }
+        @include before_phones {
+            font-size: rem(17px);
+        }
+        &--down {
+            margin-top: 10px;
+            margin-right: -9px;
+            max-width: 567px;
+            @include tablets {
+                max-width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+    &__img--up {
+        margin-top: 30px;
+        margin-right: 93px;
+        @media (max-width: 1100px) {
+            margin-right: 63px;
+        }
+        @include before_laptop {
+            margin-right: -20px;
+        }
+        @include before_tablets {
+            margin-top: 0;
+            margin-right: -40px;
+        }
+        @include tablets {
+            margin-top: 30px;
+            margin-right: 0px;
+            width: 100%;
+        }
+    }
+    &__img--down {
+        margin-left: 33px;
+        @media (max-width: 1100px) {
+            margin-left: 23px;
+        }
+        @include before_laptop {
+            margin-left: -20px;
+        }
+        @include before_tablets {
+            margin-left: -40px;
+        }
+        @include tablets {
+            margin-left: 0px;
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+}
+
+
+strong {
+    font-family: "PTSansCaptionBold";
+}
+
+.benefit {
+    min-height: 223px;
+    background-color: #1c1d21;
+}
+
+.benefit-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablets {
+        flex-direction: column;
+    }
+    &__desc {
+        font-family: "PTSansCaptionRegular";
+        max-width: 550px;
+        color: #fff;
+        font-size: rem(18px);
+        line-height: 30px;
+        margin: 0;
+        margin-top: 23px;
+        margin-left: 3px;
+        @include before_laptop {
+            font-size: rem(17px);
+            max-width: 450px;
+        }
+        @media (max-width:942px) {
+            font-size: rem(16px);
+            max-width: 400px;
+            line-height: 28px;
+        }
+        @include tablets {
+            max-width: 100%;
+            font-size: rem(17px);
+            line-height: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+}
+
+.provision__block__phone--benefit {
+    padding-top: 22px;
+    margin-right: 7px;
+    &::before {
+        top: 21px;
+    }
+    @include desctop {
+        font-size: rem(43px);
+    }
+    @include before_laptop {
+        font-size: rem(40px);
+    }
+    @media (max-width:942px) {
+        font-size: rem(38px);
+        margin-right: 0px;
+    }
+    @media(max-width: 870px) {
+        padding-left: 0;
+        &::before {
+            display: none;
+        }
+        @include tablets {
+            display: none;
+        }
+    }
+    &--click {
+        display: none;
+        @include tablets {
+            display: block;
+            text-decoration: none;
+            padding-left: 102px;
+            margin-bottom: 40px;
+            &::before {
+                display: block;
+                top: 22px;
+                left: 21px;
+            }
+        }
+        @include phones{
+            padding-left: 0;
+            margin-bottom: 10px;
+            &::before{
+                display: none;
+            }
+        }
+    }
+}
+
+.registr {
+    min-height: 999px;
+    &-instruction {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 85px;
+        @include tablets {
+            flex-direction: column;
+            padding-top: 65px;
+        }
+        &__title {
+            font-family: 'Baufra-Bold';
+            font-size: rem(36px);
+            color: $dark_grey;
+            margin: 0;
+            margin-bottom: 30px;
+            @include desctop {
+                font-size: rem(35px);
+            }
+            @media (max-width: 1100px) {
+                font-size: rem(34px);
+            }
+            @include before_laptop {
+                font-size: rem(32px);
+            }
+            @include laptop {
+                font-size: rem(30px);
+            }
+            @include tablets {
+                margin-bottom: 15px;
+            }
+        }
+        &__desc {
+            font-family: "PTSansCaptionRegular";
+            font-size: 1.125rem;
+            line-height: 30px;
+            color: $dark_grey;
+            margin: 0;
+            margin-left: 3px;
+            @include desctop {
+                margin-right: 20px;
+                margin-left: 0;
+            }
+            @include laptop {
+                font-size: rem(17px);
+                line-height: 28px;
+            }
+            @include tablets {
+                margin-bottom: 35px;
+            }
+        }
+        &__probl {
+            margin-bottom: 26px;
+            br {
+                display: none;
+            }
+        }
+        &--left {
+            max-width: 559px;
+            @include before_laptop {
+                max-width: 50%;
+            }
+            @include tablets {
+                max-width: 100%;
+            }
+        }
+        &--right {
+            max-width: 559px;
+            margin-right: 24px;
+            @include desctop {
+                margin-right: 0;
+            }
+            @include before_laptop {
+                max-width: 50%;
+            }
+            @include tablets {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.adventures__block__link--color {
+    color: $dark_grey;
+    margin-left: 3px;
+    line-height: 36px;
+    @include tablets {
+        line-height: 30px;
+    }
+    &::before {
+        top: 10px;
+        left: -26px;
+    }
+}
+
+.registr {
+    &-doc {
+        padding-top: 95px;
+        @include tablets {
+            padding-top: 55px;
+        }
+    }
+    &-title {
+        font-family: 'Baufra-Bold';
+        font-size: rem(36px);
+        color: $dark_grey;
+        margin: 0;
+        @include desctop {
+            font-size: rem(35px); //margin-left: 23px;
+        }
+        @media (max-width: 1100px) {
+            font-size: rem(34px);
+        }
+        @include before_laptop {
+            font-size: rem(32px);
+        }
+        @include laptop {
+            font-size: rem(30px);
+        }
+        @include tablets {
+            margin-bottom: 15px;
+        }
+    }
+    &-desc {
+        max-width: 706px;
+        font-size: rem(24px);
+        margin-top: 39px;
+        padding-left: 4px;
+        line-height: 30px;
+        position: relative;
+        font-family: 'Baufra-Bold';
+        color: $dark_grey;
+        margin-bottom: 21px;
+        @include laptop {
+            font-size: rem(22px);
+            line-height: 28px;
+        }
+        @include tablets {
+            font-size: rem(22px);
+            margin-top: 26px;
+        }
+        &::before {
+            content: '';
+            width: 4px;
+            height: 88%;
+            position: absolute;
+            top: 4px;
+            left: -14px;
+            background-color: $pink;
+        }
+        @include phones {
+            padding-left: 24px;
+            &::before {
+                left: 4px;
+            }
+        }
+    }
+    &-list {
+        font-family: "PTSansCaptionRegular";
+        font-size: 1.125rem;
+        color: #343339;
+        list-style: none;
+        margin-bottom: 12px;
+        line-height: 24px;
+        max-width: 743px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $pink;
+            position: absolute;
+            top: 8px;
+            left: -26px;
+        }
+        @include desctop {
+            &:last-child {
+                padding-bottom: 30px;
+            }
+        }
+    }
+    &-type {
+        padding: 0;
+        margin: 0;
+        padding-top: 4px;
+        padding-left: 29px;
+        @include phones {
+            padding-left: 50px;
+        }
+    }
+}

@@ -1,7 +1,9 @@
-
+// *{
+//     outline: 1px solid red;
+// }
 // colors
 $grey:#7a858d;
-$pink:#fa3b60;
+$pink:#fb3c61;
 $white:#f7f7f7;
 $dark_grey:#343339;
 
@@ -30,6 +32,8 @@ $phones:480px;
 @import './blocks/adjustment';
 @import './blocks/head';
 @import './blocks/car_accounting';
+@import './blocks/about_us';
+@import './blocks/registration';
 @import './blocks/our_work';
 @import './blocks/servise';
 @import './blocks/googlemap';

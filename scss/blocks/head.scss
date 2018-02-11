@@ -1,5 +1,12 @@
 // шапка ( логотип,  меню)
-
+header{
+    background-color: #1c1d21;
+    min-height: 110px;
+    @include tablets{
+        background-color:none;
+        min-height: rem(80px); 
+    }
+}
 .head__tab{
     display: none;
     @include tablets{
@@ -17,6 +24,7 @@
         left: 0;
         top: 0;
         z-index: 99;
+        margin-bottom: 30px;
     } 
 }
 .navbar{
@@ -50,11 +58,17 @@
     text-decoration: none;
     padding-top: rem(2px);
     color: $grey;
+    text-decoration: none;
+}
+.telephone--pink{
+    color:$pink;
+    text-decoration: none;
+    
 }
 .head{
     width: 100%;
-    min-height: rem(80px); 
-    padding-top: rem(12px);
+    //min-height: rem(80px); 
+    padding-top: rem(14px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,7 +103,7 @@
         }
         &__menu{
             max-width: rem(840px);
-            margin-left: rem(32px); 
+            margin-left: rem(72px); 
             @include tablets{
                 display: none;
             } 
@@ -105,8 +119,8 @@
             margin-right: rem(4px);
         }
         &__list{
-           
-            min-width: rem(340px);
+           padding: 0;
+            min-width: rem(268px);
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -129,9 +143,13 @@
                 color:$pink;
                 transition: .9s;
             }
+            &--active{
+                color:$pink;
+            }
             &--active::after{
                 content: "";
                 position: absolute;
+                color:$pink;
                 background-color: $pink;
                 display: block;
                 width: 100%;
@@ -148,15 +166,24 @@
         font-family: "PTSansCaptionRegular";
         text-decoration: none;
         padding-top: rem(2px);
+        text-decoration: none;
         &--white{
             color:#fff;
         }
         &--grey{
             color:$grey;
         }
+        &--pink{
+            color:$pink;
+            text-decoration: none;
+        }
         &--dark_grey{
             color:$dark_grey;
         }
+    }
+    .burger__telephone--pink{
+        color:$pink;
+        text-decoration: none;
     }
 }
 
@@ -209,7 +236,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 14px;
         width: 59%; 
+        @include before_phones{
+            margin-top: 0;
+            width: 62%;
+        }
         @media (max-width: 500px){
             width: 62%; 
         }
@@ -231,15 +263,15 @@
     }
     .telephone{
         font-size: rem(16px);
-        color:$grey;
+        color:$pink;
         font-family: "PTSansCaptionRegular";
         text-decoration: none;
-        margin-right: rem(77px);
+        margin-right: 77px;
         @media (max-width: 395px){
-            margin-right: rem(43px);
+            margin-right: 43px;
         }
         @media (max-width: 340px){
-            margin-right: rem(43px);
+            margin-right: 43px;
             font-size: rem(14px);
         }
     }

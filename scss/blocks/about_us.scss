@@ -1,0 +1,369 @@
+.about__team {
+    background: url(../img/Girl.png);
+    background-repeat: no-repeat;
+    background-position: right 34px bottom -82px;
+    min-height: 590px;
+    @include desctop {
+        background-position: right -105px bottom -82px;
+    }
+    @include before_laptop {
+        background-position: right -175px bottom -82px;
+    }
+    @include laptop {
+        background-position: right -126px bottom -82px;
+    }
+    @media(max-width: 849px) {
+        background-position: right -172px bottom -82px;
+    }
+    @media(max-width: 708px) {
+        background-image: none;
+        min-height: 450px;
+    }
+    @media(max-width: 560px) {
+        min-height: 550px;
+    }
+    @media(max-width: 418px) {
+        min-height: 650px;
+    }
+    &__title {
+        font-family: 'Baufra-Bold';
+        font-size: rem(36px);
+        text-align: center;
+        margin: 0;
+        padding-top: 92px;
+        margin-bottom: 93px;
+        &--color {
+            color: $pink;
+        }
+        @media(max-width: 910px) {
+            font-size: rem(34px);
+        }
+        @include tablets {
+            padding-top: 60px;
+        }
+        @media(max-width: 708px) {
+            margin-bottom: 60px;
+        }
+        @include phones {
+            padding-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    blockquote {
+        margin: 0;
+        max-width: 592px;
+        min-height: 293px;
+        margin-left: 119px;
+        padding-bottom: 29px;
+        position: relative;
+        @include laptop {
+            width: 50%;
+        }
+        @media(max-width: 910px) {
+            margin-left: 31px;
+        }
+        @media(max-width: 849px) {
+            width: 60%;
+        }
+        @media(max-width: 708px) {
+            max-width: none;
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+            padding-bottom: 0;
+        }
+    }
+    .about__team__desc__author {
+        font-size: 14px;
+        font-family: "PTSansCaptionRegular";
+        color: $dark_grey;
+        text-align: right;
+        display: block;
+        padding-top: 41px;
+        margin: 0 auto;
+        @media(max-width: 708px) {
+            margin-right: 40px;
+        }
+        @media(max-width: 332px) {
+            margin-bottom: 40px;
+        }
+    }
+    &__desc {
+        font-family: "PTSansCaptionRegular";
+        font-size: rem(18px);
+        line-height: rem(30px);
+        margin: 0;
+        margin-bottom: 30px;
+        color: $dark_grey;
+        position: relative;
+        @media(max-width: 708px) {
+            margin: 0 30px;
+            font-size: 17px;
+        }
+        &--first {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: -13px;
+                left: -34px;
+                background-image: url(../img/upper_quotes.png);
+                display: block;
+                width: 19px;
+                height: 16px;
+            }
+        }
+        &--second {
+            margin-bottom: 0;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                right: -47px;
+                background-image: url(../img/lower_quotes.png);
+                display: block;
+                width: 19px;
+                height: 16px;
+                @media(max-width: 358px) {
+                    right: -27px;
+                }
+            }
+        }
+    }
+    &__desc>span {
+        font-family: "PTSansCaptionBold";
+    }
+}
+
+.adventures {
+    background-color: #1c1d21;
+    min-height: 610px;
+    &__title {
+        margin: 0;
+        padding-top: 69px;
+        margin-right: 9px;
+        font-family: 'Baufra-Bold';
+        color: #fff;
+        font-size: rem(36px);
+        text-align: center;
+        margin-bottom: 74px;
+        @include tablets {
+            padding-top: 60px;
+            margin-bottom: 60px;
+        }
+        @include phones {
+            padding-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 708px) {
+            flex-direction: column;
+        }
+        &__part {
+            max-width: 555px;
+            margin-left: 4px;
+            margin-right: 4px;
+            @include desctop {
+                margin-right: 20px;
+                margin-left: 0;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            @media(max-width: 708px) {
+                max-width: 100%;
+                margin-right: 0;
+            }
+        }
+        &__des {
+            font-family: "PTSansCaptionRegular";
+            font-size: rem(18px);
+            color: rgba(255, 255, 255, .7);
+            margin: 0;
+            margin-bottom: 30px;
+            line-height: 30px;
+            @include laptop {
+                font-size: rem(17px);
+            }
+            &--bold {
+                font-family: "PTSansCaptionBold";
+                margin-bottom: 18px;
+                max-width: 463px;
+            }
+            &--margin {
+                margin-bottom: 18px;
+            }
+        }
+        &__list {
+            margin: 0;
+            padding: 0;
+            padding-left: 25px;
+            @media(max-width: 708px) {
+                margin-bottom: 60px;
+            }
+        }
+        &__link {
+            font-family: "PTSansCaptionRegular";
+            font-size: rem(18px);
+            color: rgba(255, 255, 255, .9);
+            list-style: none;
+            line-height: 37px;
+            position: relative;
+            @include laptop {
+                font-size: rem(17px);
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 12px;
+                left: -25px;
+                background-image: url(../img/bookmark-ribbon.png);
+                display: block;
+                width: 13px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+.provision {
+    min-height: 831px;
+    &__title {
+        font-size: rem(36px);
+        color: $dark_grey;
+        font-family: 'Baufra-Bold';
+        text-align: center;
+        margin: 0;
+        padding-top: 79px;
+        margin-left: 30px;
+        margin-bottom: 25px;
+        @include tablets {
+            padding-top: 60px;
+            margin-bottom: 60px;
+            margin-left: 0;
+        }
+        @include phones {
+            font-size: rem(32px);
+            padding-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    &__block__upper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+    &__block__left {
+        max-width: 563px;
+        margin-left: 5px;
+        @include tablets {
+            max-width: 100%;
+        }
+    }
+    &__block__left{
+        @include tablets {
+            max-width: 100%;
+        } 
+    }
+    &__block__desc {
+        max-width: 563px;
+        font-family: "PTSansCaptionRegular";
+        font-size: rem(18px);
+        color: $dark_grey;
+        line-height: 30px;
+        margin: 0;
+        margin-bottom: 30px;
+        margin-top: 5px;
+        @include laptop {
+            font-size: rem(17px);
+        }
+        @include tablets {
+            max-width: 100%;
+            width: 100%;
+            font-size: rem(18px);
+        }
+        @include phones {
+            margin-bottom: 15px;
+        }
+        &--margin {
+            margin-top: 44px;
+            margin-right: 42px;
+            max-width: 518px;
+            @media (max-width: 1041px) {
+                margin-right: 0;
+            }
+            @include laptop {
+                width: 50%;
+            }
+            @include tablets {
+                max-width: 100%;
+                width: 100%;
+            }
+            @include phones {
+                margin-top: 25px;
+            }
+        }
+    }
+    .provision__block__img {
+        margin-right: 7px;
+        @include laptop {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    &__block__lower {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include tablets {
+            flex-direction: column-reverse;
+        }
+    }
+    &__block__phone {
+        max-width: 563px;
+        font-family: 'Baufra-Bold';
+        font-size: 54.57px;
+        color: #fb3c61;
+        line-height: 63px;
+        padding-top: 13px;
+        padding-left: 102px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 11px;
+            left: 6px;
+            background-image: url(../img/provision_phone.png);
+            display: block;
+            width: 66px;
+            height: 66px;
+        }
+        @include desctop {
+            font-size: rem(43px);
+        }
+        @include before_laptop {
+            font-size: rem(40px);
+        }
+        @media(max-width:1000px) {
+            padding-left: 0;
+            &::before {
+                display: none;
+            }
+        }
+        @media (max-width:942px) {
+            font-size: rem(38px);
+            margin-right: 0px;
+        }
+        @include tablets {
+            display: none;
+        }
+    }
+}
+
