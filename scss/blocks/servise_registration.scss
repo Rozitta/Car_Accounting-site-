@@ -15,9 +15,9 @@
         color: $dark_grey;
         text-align: center;
         margin: 0;
-        padding-top: 93px;
+        padding-top: 200px;
         @include tablets {
-            padding-top: 63px;
+            padding-top: 186px;
         }
     }
     &--center{
@@ -100,6 +100,7 @@
     }
     &__img--up {
         margin-top: 30px;
+        margin-bottom: 15px;
         margin-right: 93px;
         @media (max-width: 1100px) {
             margin-right: 63px;
@@ -113,11 +114,14 @@
         }
         @include tablets {
             margin-top: 30px;
+            margin-bottom: 30px;
             margin-right: 0px;
             width: 100%;
         }
     }
     &__img--down {
+        margin-top: 15px;
+        margin-bottom: 15px;
         margin-left: 33px;
         @media (max-width: 1100px) {
             margin-left: 23px;
@@ -131,6 +135,7 @@
         @include tablets {
             margin-left: 0px;
             margin-top: 30px;
+            margin-bottom: 30px;
             width: 100%;
         }
     }
