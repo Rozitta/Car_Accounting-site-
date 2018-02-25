@@ -17,16 +17,9 @@
     @media (max-width: 395px){
         padding:10px 10px 0 10px;
     }
-    &--car_accounting{
-        padding-bottom: 84px;
-        @include tablets{
-            padding-bottom: 10px;
-        }
-        @include before_phones{
-            padding-bottom: 50px;
-        }
-       
-    }
+    // &--car_accounting{
+    //     padding: 15px 0 15px 0;
+    // }
 }
 .head__tab--container{
     max-width: rem(1150px);

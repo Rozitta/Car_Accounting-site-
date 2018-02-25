@@ -1,0 +1,38 @@
+.numbers-block--padding{
+    padding-top: 6px;
+}
+.numbers-block--margin{
+   margin-top: 53px;
+   @include tablets {
+       margin-top: 30px;
+   } 
+}
+.numbers-block__list-ol{
+    padding-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.registr-instruction--number{
+    margin-right: 20px;
+    @include tablets {
+        margin-right: 0;
+    }
+}
+.registr-instruction__desc__number{
+    @include tablets {
+        margin-bottom: 0;
+    }
+}
+.registr__number{
+    padding-bottom: 0;
+}
+.registr-instruction--right__number{
+    @include tablets {
+        margin: 0;
+    }
+}
+.registr-instruction__desc--number{
+    @include desctop {
+        margin-right: 0;
+    }
+}

@@ -1,5 +1,221 @@
-footer{
+footer {
     background: #1c1d21;
     width: 100%;
-    min-height: 100px;
+    min-height: 171px;
+}
+
+.footer-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__menu {
+    max-width: 841px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 10px; // margin-left: -30px;
+    margin-top: 28px;
+}
+
+.footer__menu--beforeLaptop {
+    @include laptop {
+        display: none;
+    }
+}
+
+.footer__menu--afterLaptop {
+    display: none;
+    @include laptop {
+        display: block;
+        max-width: 841px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-top: 23px; // margin-left: -30px;
+        @media(max-width: 733px) {
+            display: none;
+        }
+    }
+}
+
+.footer__menu--tablets {
+    display: none;
+    @media(max-width: 733px) {
+        display: block;
+        max-width: 841px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-top: 25px;
+        @media (max-width: 587px) {
+            flex-direction: column;
+        }
+    }
+    @media(max-width:455px){
+        margin: 0 auto;
+    }
+}
+
+.navbar__list--colum {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer__items {
+    margin-bottom: 13px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer-tel {
+    padding-top: 27px;
+    color: #fff;
+    font-family: "PTSansCaptionRegular";
+    font-size: 12px;
+    color: #fff;
+    padding-top: 47px;
+    @include before_laptop {
+        padding-top: 38px;
+    }
+    @media(max-width:768px) {
+        display: none;
+        
+    }
+}
+.footer__link--click{
+    display: none;
+    @media(max-width:768px){
+    display: block;
+    text-decoration: none;
+    padding-top: 37px;
+    text-decoration: none;
+    }
+    @media(max-width:480px){
+        padding-top: 29px;
+    }
+    @media(max-width:455px){
+        display: none;
+    }
+}
+.footer__link-tel{
+   display: none;
+    @media(max-width:455px){
+        margin: 0 auto;
+        text-decoration: none;
+        display: block;
+        padding-top: 2px;
+    }
+}
+.footer__items-tel{
+    display: none;
+    @media(max-width:455px){
+    display: block;
+    padding-top: 27px;
+    color: #fff;
+    font-family: "PTSansCaptionRegular";
+    font-size: 12px;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+}
+.footer__link--center{
+    @media (max-width: 587px) {
+        text-align: center;
+        width: 200px;
+        margin-left: 0;
+    }
+}
+.navbar__list {
+    &--firstColum {
+        width: 125px;
+        @media (max-width: 587px) {
+            width: 200px;
+            margin-left: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    @include before_laptop {
+        &--firstColum {
+            width: 90px;
+            @include laptop {
+                margin-left: 40px;
+            }
+            @media (max-width: 587px){
+                margin-left: 0;
+                width: 200px;
+            }
+        }
+        &--secondtColum {
+            width: 190px;
+            @media (max-width: 587px) {
+                width: 200px;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &--thirdtColum {
+            width: 170px;
+            @media (max-width: 587px) {
+                width: 200px;
+                margin-left: 0;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.footer__link {
+    font-family: "PTSansCaptionRegular";
+    color: #bdcdd9;
+    font-size: 12px;
+    text-decoration: none;
+    &:hover{
+        color: $pink;
+        transition: .9s;
+    }
+}
+
+.footer__logo {
+    margin-top: 15px;
+    display: block;
+    width: 102px;
+    height: 61px;
+    padding-top: 14px;
+    padding-left: 4px;
+    text-decoration: none;
+    @include before_laptop {
+        margin-top: 10px;
+    }
+    @include phones{
+        margin-top: 0;
+        padding-top: 15px;
+
+    }
 }

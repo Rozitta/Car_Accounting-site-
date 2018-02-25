@@ -1,0 +1,112 @@
+.registr-instruction__preTitle{
+    font-family: "PTSansCaptionBold";
+    color: #343339;
+    font-size: 18px;
+    line-height: 24px;
+}
+.registration__block__removal{
+margin-top: 32px;
+}
+.registr-doc__removal{
+padding-top: 56px;
+@include phones{
+    padding-top: 20px;
+}
+}
+.registr-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    @include tablets {
+        flex-direction: column;
+    }
+    &--left{
+        width: 50%;
+        margin-right: 25px;
+        @include tablets {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    &--right{
+        width: 50%;
+        @include tablets {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+.regisrt-list__understar{
+    margin-left: 20px;
+    font-family: "PTSansCaptionRegular";
+    font-size: 1.125rem;
+    color: #343339;
+    list-style: none;
+    margin-bottom: 12px;
+    line-height: 24px;
+    max-width: 743px;
+}
+.registr-list--star{
+    padding-top: rem(67px);
+    margin-left: 20px;
+    font-family: "PTSansCaptionRegular";
+    font-size: 1.125rem;
+    color: #343339;
+    list-style: none;
+    margin-bottom: 12px;
+    line-height: 24px;
+    max-width: 743px;
+    position: relative;
+    &::before {
+        padding-top: rem(67px);
+        content: "*";
+        position: absolute;
+        color: #fa3b60;
+        left: -47px;
+        top: 0.25rem;
+        font-size: 30px;
+        
+    }
+}
+.registr-list--twoStar{
+    padding-top: rem(67px);
+    margin-left: 20px;
+    font-family: "PTSansCaptionRegular";
+    font-size: 1.125rem;
+    color: #343339;
+    list-style: none;
+    margin-bottom: 12px;
+    line-height: 24px;
+    max-width: 743px;
+    position: relative;
+    &::before {
+        padding-top: rem(67px);
+        content: "**";
+        position: absolute;
+        color: #fa3b60;
+        left: -47px;
+        top: 0.25rem;
+        font-size: 30px;     
+}
+}
+.registr-list--threeStar {
+    padding-top: rem(67px);
+    margin-left: 20px;
+    font-family: "PTSansCaptionRegular";
+    font-size: 1.125rem;
+    color: #343339;
+    list-style: none;
+    margin-bottom: 12px;
+    line-height: 24px;
+    max-width: 743px;
+    position: relative;
+    &::before {
+        padding-top: rem(67px);
+        content: "***";
+        position: absolute;
+        color: #fa3b60;
+        left: -47px;
+        top: 0.25rem;
+        font-size: 30px;     
+}
+}

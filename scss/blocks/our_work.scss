@@ -1,12 +1,12 @@
 .our-work{
     display: block;
     background-color:#fff;
-    min-height: rem(768px);
+    min-height: rem(569px);
     width: 100%;  
-    @media(max-width: 600px){
-        margin-bottom: -60px;
+    // @media(max-width: 600px){
+    //     margin-bottom: -60px;
         
-    }  
+    // }  
     .work__style{
         font-family: 'Baufra-Bold';
         color:$dark_grey;
@@ -100,6 +100,23 @@
                 text-align: center;
                 margin-top: rem(69px);
                 line-height: rem(29px);
+                &--color{
+                    display: block;
+                    color:$pink;
+                    font-weight: bold;
+                    @include tablets {
+                        display: none;
+                    }
+                }
+                &--click{
+                    color:$pink;
+                    font-weight: bold;
+                    display: none;
+                    @include tablets {
+                        display: block;
+                        text-decoration: none;
+                    }
+                }
                 @include tablets{
                     margin-top: rem(15px);
                 }

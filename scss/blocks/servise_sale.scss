@@ -1,0 +1,22 @@
+.sale{
+    margin-top: 31px;
+    &--margin{
+        margin-top: -47px;
+        @include tablets {
+            margin-top: 0;
+        }
+    }
+}
+.sale__registr-instruction--color{
+    color:$pink;
+}
+.sale__registr-doc{
+    padding-bottom: 40px;
+    @include tablets{
+        padding-bottom: 30px;
+    }
+}
+.registr-instruction__preTitle--size{
+    font-size: rem(18px);
+
+}

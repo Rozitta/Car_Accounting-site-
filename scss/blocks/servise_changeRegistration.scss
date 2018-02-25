@@ -1,0 +1,59 @@
+.changeRegist-instruction__title{
+    font-size: rem(24px);
+    line-height: 36px;
+    font-family: 'Baufra-Bold';
+    letter-spacing: -1px;
+    @media (max-width: 1060px){
+        font-size: rem(22px);
+    }
+    @include before_tablets {
+        font-size: rem(20px);
+    }
+    @include tablets {
+        font-size: rem(22px);
+        line-height: 30px;
+    }
+}
+.registration__block__desc--changeNumb{
+    margin-top: -22px;
+}
+.adventures__block__list-change-Registr{
+    @include phones {
+        margin-bottom: 30px;
+    }
+}
+.registration__block__img--up--changeNumb{
+    margin-top: 25px;
+    margin-right: 77px;
+    @media (max-width: 1100px){
+        margin-right: 45px;
+    }
+    @media (max-width: 1060px) {
+        margin-right: 0;
+    }
+}
+.changeRegistr-block--margin{
+    padding-top: 6px;
+    margin-bottom: 80px;
+}
+.registr-instruction__title-changeRegistr{
+    margin-top: 85px;
+    max-width: 994px;
+    margin-bottom: 44px;
+    @include tablets {
+        max-width: 100%;
+        margin-top: 63px;
+    }
+}
+.change-Registration{
+    padding-top: 0;
+}
+.registr-doc__changeRegistr{
+    padding-top: 25px;
+}
+.registr-flex__changeRegistr{
+    padding-bottom: 24px;
+}
+.restoration__changeRegistr{
+    padding-bottom: 0;
+}

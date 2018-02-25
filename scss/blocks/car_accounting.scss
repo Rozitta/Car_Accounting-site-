@@ -2,7 +2,7 @@
 .car_accounting{
     background: url(../img/car_bg.jpg)center top/cover no-repeat;
     width: 100%;
-    min-height: rem(768px);
+    min-height: 768px;
     position: relative;
     // название блока
     .title{
@@ -10,17 +10,17 @@
         justify-content: space-between;
         // align-items: center;
         margin: 0;
-        margin-top: rem(127px);
+        padding-top:217px;
         @include tablets{
             display: block;
-            margin-top: rem(274px);
+            //margin-top: rem(274px);
         }
-        @include before_phones{
-            margin-top: rem(244px);
-        }
-        @include phones{
-            margin-top: 223px;
-        }
+        // @include before_phones{
+        //     margin-top: rem(244px);
+        // }
+        // @include phones{
+        //     margin-top: 223px;
+        // }
         &__1part{
             font-family:'Baufra-SemiBold';
             color:$white;
@@ -28,6 +28,9 @@
             margin-top: rem(30px);
             @include laptop{
                 font-size: rem(50px);
+            }
+            @media (max-width: 865px){
+                font-size: rem(46px);
             }
             @include before_tablets{
                 font-size: rem(42px);
@@ -61,6 +64,9 @@
             @include laptop{
                 font-size: rem(50px);  
             }
+            @media (max-width: 865px){
+                font-size: rem(46px);
+            }
             @include before_tablets{
                 font-size: rem(42px);
             }
@@ -89,9 +95,18 @@
                 margin-right: rem(94px);
                 display: flex;
                 align-items: center;
-                margin-top: rem(12px);
+                margin-top: -16px;
                 @include desctop{
                     margin-right:0;
+                }
+                @include laptop{
+                    margin-top: -8px;
+                }
+                @media (max-width: 865px){
+                    margin-top: -4px;
+                }
+                @include before_tablets{
+                    margin-top: 3px; 
                 }
                 @include tablets{
                 display: block;
@@ -126,12 +141,16 @@
             color:$white;
             font-size: rem(58px);
             margin: 0;
-            margin-top: rem(-22px);
+            margin-top: -48px;
             @include laptop{
                 font-size: rem(50px);
             }
+            @media (max-width: 865px){
+                margin-top: -30px;
+            }
             @include before_tablets{
                 font-size: rem(42px);
+             
             }
             @include tablets{
                 display: none;
@@ -164,7 +183,7 @@
         position: relative;
         max-width: rem(400px);
         min-height: rem(60px);
-        margin-top: rem(254px);
+        margin-top: 166px;
         margin-left: rem(29px);
         @include tablets{
             margin-top: rem(278px); 
@@ -208,4 +227,36 @@
             }
         }
     } 
+}
+.provision__block__phone--mainPage{
+    padding: 0;
+    margin: 0;
+    margin-top: 22px;
+    margin-left: 3px;
+    font-size: rem(58px);
+    @include laptop {
+        font-size: rem(54px);
+    }
+    @include before_tablets {
+        font-size: rem(50px);
+    }
+    &::before{
+        display: none;  
+    }
+    &--click {
+        display: none;
+        @include tablets {
+            display: block;
+            text-decoration: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            font-size: rem(48px);
+            &::before {
+                display: none;
+            }
+        }
+        @include phones {
+            font-size: rem(42px);
+        }
+    }
 }

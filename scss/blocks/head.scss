@@ -1,23 +1,189 @@
-// шапка ( логотип,  меню)
-header{
+// главный header до размера планшетов
+.header {
     background-color: #1c1d21;
-    min-height: 110px;
-    @include tablets{
-        background-color:none;
-        min-height: rem(80px); 
+    min-height: 5rem;
+    width: 100%;
+    position: fixed;
+    display: block;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between; // align-items: center;
+    display: block;
+    padding: 15px 0;
+    @include tablets {
+        background-color: none;
+        min-height: rem(80px);
     }
 }
-.head__tab{
+.head {
+    width: 100%; //min-height: rem(80px); 
+    display: flex;
+    justify-content: space-between; // align-items: center;
+    @include tablets {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between; // align-items: center;
+        &__logo {
+            display: block;
+            width: rem(102px);
+            height: rem(61px);
+            padding-top: rem(14px);
+            padding-left: rem(4px);
+            @include tablets {
+                z-index: 1000;
+            }
+            &__name {
+                font-family: 'Baufra-Regular';
+                font-size: rem(19px);
+                color: $dark_grey;
+                &--color {
+                    color: $pink;
+                }
+                &--white {
+                    color: $white;
+                }
+            }
+        }
+        &__menu {
+            max-width: 840px;
+            margin-left: 81px;
+            padding-top: 11px;
+            @include tablets {
+                display: none;
+            }
+        }
+        &__burger {
+            display: none;
+            @include tablets {
+                display: block;
+            }
+        }
+        &__items {
+            margin-right: 3px;
+            width: 61px;
+            &--servise {
+                &--hover{
+                    .submenu{
+                        display: block;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        top: 6px;
+                        right: 11px;
+                        width: 8px;
+                        height: 8px;
+                        cursor: pointer; 
+                    }
+                }
+            }
+        }
+        &__list {
+            padding: 0;
+            min-width: rem(268px);
+            display: flex;
+            justify-content: space-around; // align-items: center;
+            list-style: none;
+        }
+        &__link {
+            position: relative;
+            text-decoration: none;
+            color: $dark_grey;
+            font-size: 12px;
+            font-family: "PTSansCaptionRegular";
+            &--servise {
+                padding-left: 8px;
+            }
+            &--grey {
+                color: $grey;
+            }
+            &--white {
+                color: $white;
+            }
+            &:hover {
+                color: $pink;
+                transition: .9s;
+            }
+            &--active {
+                color: $pink;
+            }
+            &--active::after {
+                content: "";
+                position: absolute;
+                color: $pink;
+                background-color: $pink;
+                display: block;
+                width: 100%;
+                height: rem(3px);
+                top: rem(22px); 
+            }
+        }
+    }
+    .telephone {
+        font-size: rem(12px);
+        color: $dark_grey;
+        font-family: "PTSansCaptionRegular";
+        text-decoration: none;
+        padding-top: rem(2px);
+        text-decoration: none;
+        &--white {
+            color: #fff;
+        }
+        &--grey {
+            color: $grey;
+        }
+        &--pink {
+            color: $pink;
+            text-decoration: none;
+            padding-top: 30px;
+        }
+        &--dark_grey {
+            color: $dark_grey;
+        }
+    }
+    .burger__telephone--pink {
+        color: $pink;
+        text-decoration: none;
+    }
+}
+// подменю до размера планшетов
+.submenu {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 5px;
     display: none;
-    @include tablets{
+    &__items {
+        list-style: none;
+        margin-top: 20px;
+    }
+    &__link {
+        font-family: "PTSansCaptionRegular";
+        font-size: 12px;
+        color: #bdcdd9;
+        text-decoration: none;
+        &:hover{
+            color: $pink;
+            transition: .9s;
+        }
+    }
+}
+
+// планшеты и телефоны
+.head__tab {
+    display: none;
+    @include tablets {
         width: 100%;
-        min-height: rem(80px); 
+        min-height: rem(80px);
         padding-top: rem(12px);
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #1c1d21;
-        padding-top:0;
+        padding-top: 0;
         position: fixed;
         display: block;
         padding-bottom: rem(9px);
@@ -25,188 +191,77 @@ header{
         top: 0;
         z-index: 99;
         margin-bottom: 30px;
-    } 
+    }
 }
-.navbar{
+
+.navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; // align-items: center;
+    &__burger{
+        width: 37px;
+        height: 30px;
+    }
+}
+.navbar-tab{
     align-items: center;
 }
-.navbar__logo{
+
+.navbar__logo {
     display: block;
     width: rem(102px);
     height: rem(61px);
     padding-top: rem(14px);
-    padding-left:rem(4px);
-    @include tablets{
+    padding-left: rem(4px);
+    text-decoration: none;
+    @include tablets {
         z-index: 10000;
-    } 
+    }
 }
-.navbar__logo__name{
+
+.navbar__logo__name {
     font-family: 'Baufra-Regular';
     font-size: rem(19px);
-    color:$dark_grey;
-    color:$white;
+    color: $dark_grey;
+    color: $white;
 }
-.navbar__logo__name--color{
-    color:$pink;
-}
-.telephone--grey{
-    font-size: rem(12px);
-    color:$dark_grey;
-    font-family: "PTSansCaptionRegular";
-    text-decoration: none;
-    padding-top: rem(2px);
-    color: $grey;
-    text-decoration: none;
-}
-.telephone--pink{
-    color:$pink;
-    text-decoration: none;
-    
-}
-.head{
-    width: 100%;
-    //min-height: rem(80px); 
-    padding-top: rem(14px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include tablets{
-        display: none;
-    } 
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &__logo{
-            display: block;
-            width: rem(102px);
-            height: rem(61px);
-            padding-top: rem(14px);
-            padding-left:rem(4px);
-            @include tablets{
-                z-index: 1000;
-            }    
-        &__name{
-            font-family: 'Baufra-Regular';
-            font-size: rem(19px);
-            color:$dark_grey;
 
-                &--color{
-                    color:$pink;
-                }
-                &--white{
-                    color:$white;
-                }
-            } 
-        }
-        &__menu{
-            max-width: rem(840px);
-            margin-left: rem(72px); 
-            @include tablets{
-                display: none;
-            } 
-        }
-        &__burger{
-            display: none;
-            @include tablets{
-                display: block;
-                
-            }
-        }
-        &__items{
-            margin-right: rem(4px);
-        }
-        &__list{
-           padding: 0;
-            min-width: rem(268px);
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            list-style: none;
-        } 
-           
-        &__link{
-            position: relative;
-            text-decoration: none;
-            color:$dark_grey;
-            font-size: rem(12px);
-            font-family: "PTSansCaptionRegular";
-            &--grey{
-                color:$grey;
-            }
-            &--white{
-                color:$white;
-            }
-            &:hover{
-                color:$pink;
-                transition: .9s;
-            }
-            &--active{
-                color:$pink;
-            }
-            &--active::after{
-                content: "";
-                position: absolute;
-                color:$pink;
-                background-color: $pink;
-                display: block;
-                width: 100%;
-                height: rem(3px);
-                top: rem(22px);
-                // transition: width .3s ease-in-out;
-                
-            } 
-        }
-    }
-    .telephone{
-        font-size: rem(12px);
-        color:$dark_grey;
-        font-family: "PTSansCaptionRegular";
-        text-decoration: none;
-        padding-top: rem(2px);
-        text-decoration: none;
-        &--white{
-            color:#fff;
-        }
-        &--grey{
-            color:$grey;
-        }
-        &--pink{
-            color:$pink;
-            text-decoration: none;
-        }
-        &--dark_grey{
-            color:$dark_grey;
-        }
-    }
-    .burger__telephone--pink{
-        color:$pink;
-        text-decoration: none;
-    }
+.navbar__logo__name--color {
+    color: $pink;
+}
+
+// .telephone--grey {
+//     font-size: rem(12px);
+//     color: $dark_grey;
+//     font-family: "PTSansCaptionRegular";
+//     text-decoration: none;
+//     padding-top: rem(2px);
+//     color: $grey;
+//     text-decoration: none;
+// }
+
+.telephone--pink {
+    color: $pink;
+    text-decoration: none;
 }
 
 // раскрывающий бургер
-.body{
+.body {
     position: relative;
 }
 
-.burger__menu{
+.burger__menu {
     //display: block;
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color:#1c1d21; 
+    background-color: #1c1d21;
     top: 0;
     left: 0;
     z-index: 100;
     display: none;
-    padding-top: rem(15px);
-    // opacity: 0;
+    padding-top: rem(15px); // opacity: 0;
     // transition: all .3s ease .15s;
     // visibility: hidden;
-  
     // .burger__menu--active{
     //     padding-top: rem(15px);
     //     position: absolute;
@@ -219,67 +274,65 @@ header{
     //     visibility: visible;
     //     opacity: 1;
     // }
-
-    
-    .burger__menu__block{
+    .burger__menu__block {
         display: flex;
         justify-content: flex-end;
     }
-    .burger__menu__contacts{
+    .burger__menu__contacts {
         display: flex;
-       justify-content: flex-end;
-       align-items: center;
+        justify-content: flex-end;
+        align-items: center;
         height: rem(52px);
-
     }
-    .burger__menu__container{
+    .burger__menu__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 14px;
-        width: 59%; 
-        @include before_phones{
+        width: 59%;
+        @include before_phones {
             margin-top: 0;
             width: 62%;
         }
-        @media (max-width: 500px){
-            width: 62%; 
+        @media (max-width: 500px) {
+            width: 62%;
+        }
+        @media (max-width: 401px) {
+            width: 64%;
         }
     }
-    .navbar__logo{
+    .navbar__logo {
         width: rem(102px);
         margin-top: -13px;
         margin-left: 5px;
-        
-       
     }
-    .navbar__logo__name{
+    .navbar__logo__name {
         font-family: 'Baufra-Regular';
         font-size: rem(19px);
-        color:$white;
-        }
-    .navbar__logo__name--white{
-        color:$white;
+        color: $white;
     }
-    .telephone{
+    .navbar__logo__name--white {
+        color: $white;
+    }
+    .telephone {
         font-size: rem(16px);
-        color:$pink;
+        color: $pink;
         font-family: "PTSansCaptionRegular";
         text-decoration: none;
-        margin-right: 77px;
-        @media (max-width: 395px){
-            margin-right: 43px;
-        }
-        @media (max-width: 340px){
-            margin-right: 43px;
+        display: block; //margin-right: 77px;
+        // @media (max-width: 395px){
+        //     margin-right: 43px;
+        // }
+        @media (max-width: 340px) {
+            // margin-right: 43px;
             font-size: rem(14px);
         }
     }
-    .burger__cross{
+    .burger__cross {
         display: block;
         cursor: pointer;
     }
-    .burger__items{
+    .burger__items {
         position: absolute;
         bottom: 0;
         top: 50px;
@@ -299,25 +352,109 @@ header{
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        padding-bottom: rem(116px);
+        &--servise{
+            list-style: none; 
+        }
     }
-    .burger__item{
+    .burger__item {
         list-style: none;
+       
     }
-    .burger__link{
-        font-family: "PTSansCaptionRegular";
-        color:$grey;
-        font-size: rem(24px);
-        text-decoration: none;
-        margin-bottom: rem(68px);
-        display: block;
+.burger__link {
+    font-family: "PTSansCaptionRegular";
+    color: $grey;
+    font-size: rem(24px);
+    text-decoration: none;
+    margin-top: rem(68px);
+    display: block;
+    &--submenu {
+        text-align: center;
     }
-    .layer {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #ff725d;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
-        opacity: 0.5;
-       }
+}
+.layer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff725d;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+    opacity: 0.5;
+}
+}
+.submenu__items-tab{
+    list-style: none;
+    margin-top: 25px;
+}
+.submenu-tab{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    // padding-top: 5px;
+    display: none;
+    text-align: center;
+    padding-top: 13px;
+    margin-bottom: -23px;
+}
+.submenu__link-tab{
+    font-family: "PTSansCaptionRegular";
+    font-size: rem(18px);
+    color: #bdcdd9;
+    text-decoration: none;
+}
+
+
+// динамичные плюсики и минусы 
+.services_menu--plus{
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        top: 6px;
+        right: 10px;
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        background-image: url(../img/plus.png);
+    }
+}
+.services_menu--minus{
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        top: 9px;
+        right: 10px;
+        width: 8px;
+        height: 3px;
+        cursor: pointer;
+        background-image: url(../img/minus.png);
+    }
+}
+.burger__menu--plus{
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 7px;
+        margin-left: 6px;
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        background-image: url(../img/plus.png);
+    }
+}
+.burger__menu--minus{
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 9px;
+        margin-left: 6px;
+        width: 8px;
+        height: 3px;
+        cursor: pointer;
+        background-image: url(../img/minus.png);
+    }
 }

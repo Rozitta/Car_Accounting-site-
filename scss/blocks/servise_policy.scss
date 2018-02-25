@@ -1,0 +1,37 @@
+.policy-title{
+    padding-top: 0;
+    margin: 0;
+    text-align: left;
+    margin-top: -30px;
+    margin-bottom: 33px;
+    @include tablets {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+.policy__img--down{
+    margin-top: -36px;
+    @include tablets {
+        margin-top: 30px;
+    }
+}
+.registr-instruction__title--color{
+    color:#fb3c61;
+    @include tablets {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    @media (max-width:708px) {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+.policy-adventures__block{
+    margin-top: 20px;
+}
+.policy-doc{
+    padding-top: 53px;
+    @media (max-width:708px) {
+        padding-top: 40px;
+    }
+}

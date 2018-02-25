@@ -31,9 +31,15 @@ $phones:480px;
 //blocks
 @import './blocks/adjustment';
 @import './blocks/head';
-@import './blocks/car_accounting';
 @import './blocks/about_us';
-@import './blocks/registration';
+@import './blocks/car_accounting';
+@import './blocks/servise_registration';
+@import './blocks/servise_removal';
+@import './blocks/servise_sale';
+@import './blocks/servise_restoration';
+@import './blocks/servise_changeNumbers';
+@import './blocks/servise_policy';
+@import './blocks/servise_changeRegistration';
 @import './blocks/our_work';
 @import './blocks/servise';
 @import './blocks/googlemap';

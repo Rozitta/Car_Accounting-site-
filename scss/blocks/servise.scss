@@ -1,275 +1,211 @@
-//3 услуги
-.servises {
-    display: block;
-    background: url(../img/car.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 50%;
-    min-height: rem(768px);
-    width: 100%;
-    position: relative;
-    transition: 1.3s;
-    &:hover{
-     -webkit-filter: contrast(1.15);
-     filter: contrast(1.15);  
+
+.ourServises__title{
+    font-family: 'Baufra-Bold';
+    font-size: rem(36px);
+    color:$dark_grey;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 93px;
+    @include tablets {
+        padding-top: 80px;
+    }
+
 }
-    @include desctop {
-        min-height: 53rem;
-        .telephone--servise {
-            color: $dark_grey;
-            @include tablets{
-                color: $white;  
-            }
+.ourServise-type{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+    @include before_laptop {
+        margin-bottom: 100px;
+    }
+    @include tablets {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    @include phones{
+        margin-bottom: 65px;
+    }
+    &--flexTabl{
+        @include tablets {
+            flex-direction: column-reverse;
+        } 
+    }
+    &__block-left{
+        max-width: 538px;
+        @include tablets {
+            max-width: 100%;
         }
-        @include before_laptop {
-            min-height: 50rem;
-            background-size: 52%;
-        }
+    }
+    &__block-right{
+        max-width: 538px;
+        margin-right: 24px;
         @include laptop {
-            min-height: 49rem;
-            background-size: 54%;
+            margin-right: 0;
         }
-        @include before_tablets {
-            min-height: 44rem;
-        }
-        @include tablets{
-            padding-top: 50px;
-            background-size: 50%;
-            min-height: rem(460px);
-        }
-        @include before_phones{
-            background-size: 50%;
-        }
-        @media(max-width: 600px){
-            background:none;
-            
+        @include tablets {
+            max-width: 100%;
+            order: 1;
         }
     }
-    .parts {
-        display: flex;
-        justify-content: space-between;
-        .left_part {
-            width: 50%;
-            background-position: left;
-            @include before_phones{
-                width: 47%;
-            }
-            @media(max-width: 600px){
-                width: 45%;
-            }
-            @media(max-width: 600px){
-                width: 100%;
-                
-            }
-            .servise {
-                &__title {
-                    font-family: 'Baufra-Bold';
-                    font-size: rem(36px);
-                    color: $dark_grey;
-                    margin: 0;
-                    margin-top: rem(34px);
-                }
-                &__accordion {
-                    max-width: rem(460px);
-                    padding-top: rem(30px);
-                    @include laptop {
-                        max-width: rem(350px);
-                    }
-                    
-                    &__title {
-                        margin: 0;
-                        margin-left: rem(21px);
-                        margin-bottom: rem(28px);
-                        position: relative;
-                        cursor: pointer;
-                        font-weight: normal;
-                        
-                        
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            width: rem(2px);
-                            height: 100%;
-                            left: rem(-15px);
-                            background-color: #929292;
-                        }
-                        a {
-                            text-decoration: none;
-                            font-family: "PTSansCaptionRegular";
-                            font-size: rem(18px);
-                            color: $dark_grey;
-                            transition: .8s;
-                            display: block;
-                            &:hover{
-                                color:$pink;
-                            }
-                        }
-                        &--active, &--hover {
-                            a {
-                                font-family: "PTSansCaptionBold";
-                            }
-                            &::before {
-                                background-color: $pink;
-                                width: rem(4px);
-                            }
-                        }
-                    }
-                }
-            }
+    &__title{
+        font-family: 'Baufra-Bold'; 
+        font-size: rem(36px);
+        color:$dark_grey;
+        margin: 0;
+        @include laptop {
+            font-size: rem(34px);
         }
-    }
-    .right_part {
-        width: 50%;
-         padding-left: rem(101px);
        
-        @include desctop {
-            padding-left: rem(70px);
-        }
-        @include laptop {
-            padding-left: 0;
-        }
-        @include before_phones{
-            width: 53%;
-        }
-        @media(max-width: 600px){
-            width: 0;
-            
-        }
-        .desc {
-            &-trigger{
-                transition: all 0.8s;
-                max-height: auto;
-            }
-            &__tittle {
-                font-size: rem(24px);
-                color: #fff;
-                font-family: 'Baufra-Bold';
-                margin: 0;
-                margin-top: rem(49px);
-                position: relative;
-                padding-left: rem(16px);
-                @include before_tablets {
-                    margin-top: rem(50px);
-                    font-size: rem(20px);
-                }
-                @include tablets{
-                    display: none;
-                }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    height: 100%;
-                    left: rem(-15px);
-                    left: 0;
-                    background-color: $pink;
-                    width: rem(4px);
-                }
-            }
-            &__name {
-                color: #fff;
-                font-family: "PTSansCaptionBold";
-                font-size: rem(16px);
-                margin-bottom: rem(-4px);
-                @include tablets{
-                    display: none;
-                }
-            }
-            &__item {
-                padding: 0;
-                @include tablets{
-                    display: none;
-                }
-                &__list {
-                    list-style: none;
-                    position: relative;
-                    padding-left: rem(16px);
-                    font-family: "PTSansCaptionRegular";
-                    font-size: rem(14px);
-                    color: #fff;
-                    margin-top: rem(22px);
-                    line-height: rem(15px);
-                    @include tablets{
-                        display: none;
-                    }
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        background-color: $pink;
-                        width: rem(6px);
-                        height: rem(6px);
-                        border-radius: 50%;
-                        left: 0;
-                        top: rem(4px);
-                    }
-                }
-            }
-        }
     }
-    .button {
-        border: none;
-        width: rem(180px);
-        height: rem(45px);
-        background-color: $pink;
-        border-radius: rem(28px);
-        color: #fff;
+    &__desc{
+        font-family: "PTSansCaptionRegular";
         font-size: rem(18px);
-        font-family: 'Baufra-SemiBold';
-        display: block;
-        text-decoration: none;
-        padding: rem(12px) rem(39px);
-        box-sizing: border-box;
-        bottom: rem(75px);
-        position: absolute;
-        transition: .8s;
-        cursor: pointer;
+        color:$dark_grey;
+        margin-top: 17px;
+        line-height: 30px;
+        @include laptop {
+            font-size: rem(17px);
+        }
+        @include tablets {
+            font-size: rem(18px);
+        }
+    }
+    &__submit{
+        width: 199px;
+        height: 53px;
+        background-color: #ff3861;
+        border-radius: 35px;
+        color: #fff;
+        font-family: "PTSansCaptionRegular";
+        font-size: 18px;
+        border: none;
         outline: none;
-        @include desctop {
-            bottom: rem(150px);
+        position: relative;
+        margin-top: 16px;
+        margin-left: 4px;
+        padding-right: 31px;
+        cursor: pointer;
+        transition: .6s;
+        &:hover{
+            box-shadow: 0px 11px 38px 0px rgba(255, 56, 97, 0.58);
         }
-        @include before_tablets {
-            bottom: rem(130px);
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/arrow_left.png);
+            right: 25px;
+            top: 23px;
+            width: 21px;
+            height: 7px;
+            
         }
-        @include tablets{
-            bottom: rem(51px);
-            right: rem(93px);
+    }
+}
+.registration__block__img--up__serviseMain{
+    margin-top: -11px;
+    margin-right: 29px;
+    width: 100%;
+    @media(max-width:1110px){
+        margin-right: 0;
+    }
+    @include before_laptop {
+        margin-top: 0;
+    }
+    @include tablets {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 70%;
+        display: block;
+        margin: 0 auto ;
+    }
+    @include phones {
+        width: 80%;
+    }
+}
+.registration__block__img--down__serviseMain{
+    margin-top: -43px;
+    margin-left: 27px;
+    width: 100%;
+    @media(max-width:1110px){
+        margin-left: 0;
+    }
+    @include before_laptop {
+        margin-top: 0;
+    }
+    @include tablets {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 70%;
+        display: block;
+        margin: 25px auto ;
+    }
+    @include phones {
+        width: 80%;
+    }
+}
+.ourServise-type__left{
+    max-width: 564px;
+    margin-left: 151px;
+    @media(max-width:1136px) {
+        margin-left: 100px;
+    }
+    @include before_laptop {
+        margin-left: 65px;
+    }
+    @include laptop {
+        margin-left: 0;
+        max-width: 500px;
+    }
+    @media(max-width:745px) {
+        max-width: 100%;
+    }
+}
+.ourServise-type__team{
+    background: url(../img/Girl.png);
+    background-repeat: no-repeat;
+    min-height: 429px;
+    background-position: right -39px bottom -82px;
+    @media (max-width:1136px) {
+        background-position: right -82px bottom -82px;
+    }
+    @include before_laptop {
+        background-position: right -135px bottom -82px;
+    }
+    @include laptop {
+        background-position: right -188px bottom -82px;
+    }
+    @media(max-width:745px) {
+        background: none;
+    }
+}
+
+.ourServise-type__title-about-team{
+    font-family: 'Baufra-Bold';
+    font-size: 2.25rem;
+    color: #343339;
+    margin: 0;
+    padding-top: 99px;
+    margin: 0 auto;
+        @include laptop {
+            font-size: rem(34px);
         }
-        @media( max-width: 700px){
-            bottom: rem(77px);
+        @include phones {
+            padding-top: 60px;
         }
-        @media( max-width: 673px){
-            bottom: rem(85px);
-            right: rem(73px);
-        }
-        @media( max-width: 640px){
-            bottom: rem(95px);
-        }
-        @media(max-width: 600px){
-            right:200px;
-            bottom: 43px;
-        } 
-        @media(max-width: 400px){
-            right:130px;     
-        } 
-        @media(max-width: 360px){
-            right:100px;     
-        } 
         
-       
-        &:hover {
-            background-color: #fff;
-            color:$pink;
-        }
-    }
-    .hidden {
-        display: none;
+}
+.ourServise-type__desc-team{
+    margin-top: 27px;
+    margin-bottom: 13px;
+    @media(max-width:745px) {
+        margin-top: 17px;
     }
 }
-
-
-.hidden--hoverJs{
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    
+.team-block__phone{
+    font-size: rem(36px);
+    margin-top: 5px;
+    margin-left: 0;
+    @media (max-width: 380px) {
+        padding-bottom: 30px;
+    }
 }
-
