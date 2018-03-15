@@ -1,5 +1,6 @@
 <?php require_once 'head.php'; ?>
-    <!-- основная часть сайта -->
+<script>var new_title = "Изменение регистрационных данных собственника" </script>
+
     <div class="wrapper">
         <div class="registration__part">
             <div class="container">
@@ -40,9 +41,7 @@
         <div class="benefit">
             <div class="container">
                 <div class="benefit-block">
-                    <p class="benefit-block__desc">Для того, чтобы восстановить, либо заменить гос номера вам нужно просто позвонить по указанному номеру,
-                        и наши специалисты окажут вам профессиональную помощь. Мы выполним данную задачу в очень быстрое
-                        время и вам не придётся тратить своё личное время</p>
+                    <p class="benefit-block__desc">Мы поможем вам внести изменения в регистрационные данные собственника транспортного средства. Для этого вам следует связаться с нами по указанному номеру телефона.</p>
                     <p class="provision__block__phone provision__block__phone--benefit">+7 925 067-20-68</p>
                     <a href="tel:+79250672068" class="provision__block__phone provision__block__phone--benefit provision__block__phone--benefit--click">+7 925 067-20-68</a>
                 </div>
@@ -72,20 +71,18 @@
                 </div>
                 <div class="registr-doc registr-doc__removal registr-doc__changeRegistr" id="docListService">
                     <h3 class="registr-title registr-title__restoration">Список документов</h3>
-                    <p class="registr-desc registr-desc__restoration">Замена гос. номеров на авто</p>
-                    <h4 class=" registr-instruction__preTitle registr-instruction__preTitle--size">Список необходимых документов:
-                    </h4>
+                    <p class="registr-desc registr-desc__restoration">Изменения регистрационных данных собственника авто</p>
                     <div class="registr-flex registr-flex__changeRegistr">
                         <div class="registr-flex--left">
                             <ul class='registr-type'>
-                                <li class='registr-list'>Паспорт гражданина РФ;</li>
-                                <li class='registr-list'>Нотариально заверенная доверенность (для доверенных представителей);</li>
-                                <li class='registr-list'>Паспорт транспортного средства;</li>
+                                <li class='registr-list'>Паспорт гражданина РФ</li>
+                                <li class='registr-list'>Нотариально заверенная доверенность (для доверенных представителей)</li>
+                                <li class='registr-list'>Паспорт транспортного средства</li>
                                 <li class='registr-list'>Регистрационное свидетельство средства или технического паспорта автомототранспортного средства
-                                    или прицепа (СТС); </li>
+                                    или прицепа (СТС) </li>
                                 <li class='registr-list'>Документ, удостоверяющий право собственности на автомототранспортное средство и(или) прицеп
-                                    либо на номерной агрегат*;</li>
-                                <li class='registr-list'>Свидетельство о безопасности конструкции транспортного средства**;</li>
+                                    либо на номерной агрегат*</li>
+                                <li class='registr-list'>Свидетельство о безопасности конструкции транспортного средства**</li>
                                 <li class='registr-list'>Свидетельство о браке***</li>
                             </ul>
                         </div>
@@ -94,31 +91,31 @@
                         <div class="registr-flex--right">
                             <ul class='registr-type'>
                                 <li class=' registr-list--star registr-list--star__restoration'>
-                                    договора (купли-продажи, дарения);
+                                    договора (купли-продажи, дарения)
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    документов, выдаваемых органами социальной защиты населения;
+                                    документов, выдаваемых органами социальной защиты населения
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    решения судов, постановления органов исполнения судебных актов;
+                                    решения судов, постановления органов исполнения судебных актов
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    выписки из передаточных актов (касающиеся ТС);
+                                    выписки из передаточных актов (касающиеся ТС)
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    выписки из разделительного баланса (касающиеся ТС);
+                                    выписки из разделительного баланса (касающиеся ТС)
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    свидетельства о праве на наследство;
+                                    свидетельства о праве на наследство
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    заверенной выписки протокола тиражной комиссии или правил проведения лотереи и акт передачи ТС;
+                                    заверенной выписки протокола тиражной комиссии или правил проведения лотереи и акт передачи ТС
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    заверенной выписки протокола тиражной комиссии или правил проведения лотереи и акт передачи ТС;
+                                    заверенной выписки протокола тиражной комиссии или правил проведения лотереи и акт передачи ТС
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    иных договоров и документов, удостоверяющих право собственности на ТС.
+                                    иных договоров и документов, удостоверяющих право собственности на ТС
                                 </li>
 
                                 <li class=' registr-list--star registr-list--twoStar registr-list--twoStar__restoration'>
@@ -126,7 +123,7 @@
                                     которого в индивидуальном порядке были внесены изменения до выпуска в обращение, или
                                     изготовленного в Российской Федерации в индивидуальном порядке из сборочного комплекта,
                                     или являющегося результатом индивидуального технического творчества, или выпускаемого
-                                    в обращение из числа ранее поставленных по государственному оборонному заказу.
+                                    в обращение из числа ранее поставленных по государственному оборонному заказу
                                 </li>
                                 <li class=' registr-list--star registr-list--threeStar registr-list--threeStar__restoration '>
                                     при изменении фамилии

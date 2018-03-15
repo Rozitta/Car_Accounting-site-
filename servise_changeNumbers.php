@@ -1,4 +1,5 @@
 <?php require_once 'head.php'; ?>
+<script>var new_title = "Замена гос. Номеров" </script>
     <!-- основная часть сайта -->
     <div class="wrapper">
         <div class="registration__part">
@@ -51,13 +52,10 @@
                                     <li class="registr-instruction__desc registr-instruction__desc__number"> Запрещена эксплуатация номерных знаков по следующим причинам:</li>
                             </ol>
                             <ul class='adventures__block__list policy-adventures__block'>
-                                <li class='adventures__block__link adventures__block__link--color restoration-link--lh'>Позвонить
+                                <li class='adventures__block__link adventures__block__link--color restoration-link--lh'>Нанесенные на знаки обозначения плохо читаются: в темное время суток их не видно с расстояния 20 метров
                                 </li>
-                                <li class='adventures__block__link adventures__block__link--color restoration-link--lh'>Предъявить старый страховой полис</li>
-                                <li class='adventures__block__link adventures__block__link--color restoration-link--lh'>Ответить на вопросы о возрасте и стаже вождения</li>
-                                <li class='adventures__block__link adventures__block__link--color restoration-link--lh'>Произвести оплату
-                                </li>
-                                <li class='adventures__block__link adventures__block__link--color restoration-link--lh'>Получить новый полис</li>
+                                <li class='adventures__block__link adventures__block__link--color restoration-link--lh'>На номерах стерлись надписи, либо же облупилась краска, в связи с чем нельзя корректно считать информацию</li>
+                                <li class='adventures__block__link adventures__block__link--color restoration-link--lh'>Знаки заржавели, сломаны или измяты</li>
                             </ul>
                         </div>
                     </div>
@@ -80,19 +78,17 @@
                 <div class="registr-doc registr-doc__removal" id="docListService">
                     <h3 class="registr-title registr-title__restoration">Список документов</h3>
                     <p class="registr-desc registr-desc__restoration">Замена гос. номеров на авто</p>
-                    <h4 class=" registr-instruction__preTitle registr-instruction__preTitle--size">Список необходимых документов:
-                    </h4>
                     <div class="registr-flex">
                         <div class="registr-flex--left">
                             <ul class='registr-type'>
-                                <li class='registr-list'>Паспорт гражданина РФ;</li>
-                                <li class='registr-list'>Нотариально заверенная доверенность (для доверенных представителей);</li>
-                                <li class='registr-list'>Паспорт транспортного средства;</li>
+                                <li class='registr-list'>Паспорт гражданина РФ</li>
+                                <li class='registr-list'>Нотариально заверенная доверенность (для доверенных представителей)</li>
+                                <li class='registr-list'>Паспорт транспортного средства</li>
                                 <li class='registr-list'>Регистрационное свидетельство средства или технического паспорта автомототранспортного
-                                    средства или прицепа (СТС); </li>
+                                    средства или прицепа (СТС) </li>
                                 <li class='registr-list'>Документ, удостоверяющий право собственности на автомототранспортное средство и(или)
-                                    прицеп либо на номерной агрегат*;</li>
-                                <li class='registr-list'>Свидетельство о безопасности конструкции транспортного средства**;</li>
+                                    прицеп либо на номерной агрегат*</li>
+                                <li class='registr-list'>Свидетельство о безопасности конструкции транспортного средства**</li>
                                 <li class='registr-list'>Свидетельство о браке***</li>
                             </ul>
                         </div>
@@ -101,31 +97,31 @@
                         <div class="registr-flex--right">
                             <ul class='registr-type'>
                                 <li class=' registr-list--star registr-list--star__restoration'>
-                                    договора (купли-продажи, дарения);
+                                    договора (купли-продажи, дарения)
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    документов, выдаваемых органами социальной защиты населения;
+                                    документов, выдаваемых органами социальной защиты населения
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    решения судов, постановления органов исполнения судебных актов;
+                                    решения судов, постановления органов исполнения судебных актов
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    выписки из передаточных актов (касающиеся ТС);
+                                    выписки из передаточных актов (касающиеся ТС)
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    выписки из разделительного баланса (касающиеся ТС);
+                                    выписки из разделительного баланса (касающиеся ТС)
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    свидетельства о праве на наследство;
+                                    свидетельства о праве на наследство
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    заверенной выписки протокола тиражной комиссии или правил проведения лотереи и акт передачи ТС;
+                                    заверенной выписки протокола тиражной комиссии или правил проведения лотереи и акт передачи ТС
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    заверенной выписки протокола тиражной комиссии или правил проведения лотереи и акт передачи ТС;
+                                    заверенной выписки протокола тиражной комиссии или правил проведения лотереи и акт передачи ТС
                                 </li>
                                 <li class=" regisrt-list__understar ">
-                                    иных договоров и документов, удостоверяющих право собственности на ТС.
+                                    иных договоров и документов, удостоверяющих право собственности на ТС
                                 </li>
 
                                 <li class=' registr-list--star registr-list--twoStar registr-list--twoStar__restoration'>
@@ -134,7 +130,7 @@
                                     или изготовленного в Российской Федерации в индивидуальном порядке из сборочного
                                     комплекта, или являющегося результатом индивидуального технического творчества,
                                     или выпускаемого в обращение из числа ранее поставленных по государственному
-                                    оборонному заказу.
+                                    оборонному заказу
                                 </li>
                                 <li class=' registr-list--star registr-list--threeStar registr-list--threeStar__restoration '>
                                     при изменении фамилии

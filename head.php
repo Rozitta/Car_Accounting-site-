@@ -18,7 +18,7 @@
     <!-- мои стили -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Постановка на учет в Москве</title>
+    <title></title>
 </head>
 
 <body>
@@ -36,14 +36,14 @@
                         <nav class="navbar__menu">
                             <ul class="navbar__list">
                                 <li class="navbar__items ">
-                                    <a class="navbar__link navbar__link--grey navbar__link--active" href="index.php" >Главная</a>
+                                    <a class="navbar__link navbar__link--grey " href="index.php" >Главная</a>
                                 </li>
                                 <li class="navbar__items">
                                     <a class="navbar__link navbar__link--grey" href="about_us.php" >О Нас</a>
                                 </li>
                                 <li class="navbar__items navbar__items--servise services_menu--plus">
                                     <a class="navbar__link navbar__link--servise navbar__link--grey ">Услуги</a>
-                                    <ul class=" submenu">
+                                    <ul class="submenu">
                                         <li class="submenu__items">
                                             <a class="submenu__link" href="servise_registration.php">Постановка на учет </a>
                                         </li>
@@ -51,13 +51,7 @@
                                             <a class="submenu__link" href="servise_removal.php">Снятие с учета </a>
                                         </li>
                                         <li class="submenu__items">
-                                            <a class="submenu__link" href="servise_sale.php">Договор купли-продажи</a>
-                                        </li>
-                                        <li class="submenu__items">
                                             <a class="submenu__link" href="servise_restoration.php">Замена ПТС и СТС</a>
-                                        </li>
-                                        <li class="submenu__items">
-                                            <a class="submenu__link" href="servise_policy.php">ОСАГО</a>
                                         </li>
                                         <li class="submenu__items">
                                             <a class="submenu__link" href="servise_changeNumbers.php">Замена гос. номеров</a>
@@ -65,10 +59,16 @@
                                         <li class="submenu__items">
                                             <a class="submenu__link" href="servise_changeRegistration.php">Изменение регистрационных данных собственника</a>
                                         </li>
+                                        <li class="submenu__items">
+                                            <a class="submenu__link" href="servise_sale.php">Договор купли-продажи</a>
+                                        </li>
+                                        <li class="submenu__items">
+                                            <a class="submenu__link" href="servise_policy.php">ОСАГО</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="navbar__items">
-                                    <a class="navbar__link navbar__link--grey navbar__link--servise">Отзывы</a>
+                                    <a class="navbar__link navbar__link--grey navbar__link--servise" href="reviews.php">Отзывы</a>
                                 </li>
                             </ul>
                         </nav>
@@ -85,7 +85,7 @@
         <div class=" head__tab--container">
             <div class="navbar navbar-tab">
                 <a class="navbar__logo" href="index.php">
-                    <img class="navbar__logo__img" src="./img/logo.png" alt="">
+                    <img class="navbar__logo__img navbar__logo__img--width" src="./img/logo.png" alt="">
                     <span class="navbar__logo__name navbar__logo__name--white">gai-msk<span class="navbar__logo__name--color">.ru</span>
                     </span>
                 </a>
@@ -117,13 +117,7 @@
                                     <a class="submenu__link submenu__link-tab" href="servise_removal.php">Снятие с учета </a>
                                 </li>
                                 <li class="submenu__items submenu__items-tab">
-                                    <a class="submenu__link submenu__link-tab" href="servise_sale.php">Договор купли-продажи</a>
-                                </li>
-                                <li class="submenu__items submenu__items-tab">
                                     <a class="submenu__link submenu__link-tab" href="servise_restoration.php">Замена ПТС и СТС</a>
-                                </li>
-                                <li class="submenu__items submenu__items-tab">
-                                    <a class="submenu__link submenu__link-tab" href="servise_policy.php">ОСАГО</a>
                                 </li>
                                 <li class="submenu__items submenu__items-tab">
                                     <a class="submenu__link submenu__link-tab" href="servise_changeNumbers.php">Замена гос. номеров</a>
@@ -132,10 +126,16 @@
                                     <a class="submenu__link submenu__link-tab" href="servise_changeRegistration.php">Изменение регистрационных
                                         <br> данных собственника</a>
                                 </li>
+                                <li class="submenu__items submenu__items-tab">
+                                    <a class="submenu__link submenu__link-tab" href="servise_sale.php">Договор купли-продажи</a>
+                                </li>
+                                <li class="submenu__items submenu__items-tab">
+                                    <a class="submenu__link submenu__link-tab" href="servise_policy.php">ОСАГО</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="burger__item">
-                            <a class="burger__link" href="#contacts">Отзывы</a>
+                            <a class="burger__link" href="reviews.php">Отзывы</a>
                         </li>
                     </ul>
                 </div>

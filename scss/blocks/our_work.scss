@@ -19,6 +19,7 @@
         }  
            
     }
+    
     .work{
         margin-top: rem(92px);
         display: flex;
@@ -62,6 +63,7 @@
                 border:1px solid #49494f;
                 position: relative;
                 transition: .8s;
+  
                 &:hover{
                     -webkit-transform: scale(1.07);
                     transform: scale(1.07);
@@ -92,6 +94,7 @@
                 top:0;
                 bottom:0;
                 margin: auto;
+                
             }
             &__desc{
                 font-family: "PTSansCaptionRegular";

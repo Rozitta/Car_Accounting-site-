@@ -1,4 +1,5 @@
 <?php require_once 'head.php'; ?>    
+<script>var new_title = "Постановка на учет" </script>
         <div class="wrapper">
         <div class="registration__part">
             <div class="container">
@@ -11,15 +12,15 @@
                         <strong>gai-msk</strong> поможет физическим лицам поставить транспортное средство на учёт в ГИБДД. Мы поставим
                         ваш автомобиль
                         <strong>на учёт за 90 минут.</strong> Процесс постановки автомобиля на учёт в ГИБДД имеет определённые особенности
-                        и не всегда отличается своей простотой. Это является главной причиной, по которой данная процедур
+                        и не всегда отличается своей простотой. Это является главной причиной, по которой данная процедура
                         отнимает у автовладельцев много нервов и сил.</p>
                    <img class = 'registration__block__img--up' src="./img/registration_desct.png" alt="">
                 </div>
                 <div class="registration__block registration__block--reverse">
                    <img class = 'registration__block__img--down' src="./img/registration_img.png" alt="">
-                    <p class="registration__block__desc registration__block__desc--down">Мы поможем вам сэкономить ваше время и сберечь вашу нервную систему. В ГИБДД вам придётся бегать по кабинетам,
+                    <p class="registration__block__desc registration__block__desc--down">В ГИБДД вам придётся бегать по кабинетам,
                         и чтобы в них попасть вам нужно будет выстаивать километровые очереди. Чтобы добиться желаемого результата
-                        вам придётся пожертвовать немалым количеством своего времени.</p>
+                        вам придётся пожертвовать немалым количеством своего времени. <strong>Мы поможем вам сэкономить ваше время и сберечь вашу нервную систему.</strong></p>
                 </div>
             </div>
         </div>

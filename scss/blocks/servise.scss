@@ -81,10 +81,16 @@
         border: none;
         outline: none;
         position: relative;
-        margin-top: 16px;
+        margin-top: 35px;
         margin-left: 4px;
-        padding-right: 31px;
+        display: block;
+        text-decoration: none;
+        padding-left: 37px;
+        box-sizing: border-box;
+        padding-top: 15px;
         cursor: pointer;
+        -webkit-transition: .6s;
+        -o-transition: .6s;
         transition: .6s;
         &:hover{
             box-shadow: 0px 11px 38px 0px rgba(255, 56, 97, 0.58);

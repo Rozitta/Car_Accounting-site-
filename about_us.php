@@ -1,5 +1,6 @@
 <?php require_once 'head.php'; ?>
-            <!-- основная часть сайта -->
+<script>var new_title = "О нас" </script>
+
         <div class="wrapper">
         <div class="about__team">
             <div class="container">
@@ -7,7 +8,7 @@
                 <blockquote>
                     <p class="about__team__desc "><span class="about__team__desc--first">Мы </span>специализируемся на услугах, которые непосредственно связаны с <span class="about__team__desc--bold">оформлением автомобильных документов.</span></p>
                     <p class="about__team__desc ">У нас немалый опыт работы в данной сфере, поэтому наши специалисты обладают ценными знаниями, и мы готовы вам помочь в любых вопросах по любым из предоставленных нами <span class="about__team__desc--second">услуг.</span></p>
-                    <span class="about__team__desc__author">Анастасия Филатова, Менеджер</span>
+                    
                 </blockquote>  
             </div>
         </div>
@@ -20,7 +21,7 @@
                         <p class = 'adventures__block__des'>Временами при прохождении данной процедуры кажется, что более изматывающего процесса, чем оформление и получение документов в ГИБДД – придумать просто невозможно.</p>
                     </div>
                     <div class="adventures__block__part">
-                        <p class = 'adventures__block__des adventures__block__des--margin'>В такие моменты мы понимаем, что очереди в больницах и общественном транспорте кажутся совсем мелкими неприятностями. Конечно же вы и сами можете справиться с такой сложной задачей. </p>
+                        <p class = 'adventures__block__des adventures__block__des--margin'>В такие моменты мы понимаем, что очереди в больницах и общественном транспорте кажутся совсем мелкими неприятностями. </p>
                         <p class = 'adventures__block__des adventures__block__des--bold'>Конечно же вы и сами можете справиться с такой сложной задачей. Но стоит ли это:</p>
                         <ul class ='adventures__block__list' >
                             <li class ='adventures__block__link'>потраченного времени</li>
@@ -43,7 +44,7 @@
                         человека во всём этом бюрократическом хаосе заняло бы
                         дни и недели скитаний по кабинетам ГИБДД.</p>
                        <p class = 'provision__block__desc'>Вам не придется отвлекаться от своих домашних дел. Наши
-                        профессионалы сделают за всё за вас в самые быстрые
+                        профессионалы сделают всё за вас в самые быстрые
                         сроки.</p>
                    </div>
                    <div class="provision__block__right">

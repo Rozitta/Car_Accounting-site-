@@ -1,4 +1,5 @@
 <?php require_once 'head.php'; ?>
+<script>var new_title = "Центр авто услуг" </script>
 
     <div class="wrapper">
         <!-- секция №1 -->
@@ -36,8 +37,8 @@
                 <div class="work">
 
                     <div class="work__items work__items--left">
-                        <div class="work__items--circle work__items--circle--left">
-                            <img class="work__items__img" src="img/cursor.png" alt="">
+                        <div class="work__items--circle  work__items--circle--left">
+                            <img class="work__items__img " src="img/cursor.png" alt="">
                         </div>
                         <p class="work__items__desc">Выбираете необходимую Вам услугу из перечня ниже.</p>
                     </div>
@@ -46,8 +47,8 @@
                         <img src="img/Rectangle.png" alt="">
                     </div>
                     <div class="work__items work__items--center">
-                        <div class="work__items--circle work__items--circle--center">
-                            <img class="work__items__img" src="img/phone.png" alt="">
+                        <div class="work__items--circle  work__items--circle--center">
+                            <img class="work__items__img " src="img/phone.png" alt="">
                         </div>
 
                         <p class="work__items__desc">Звоните нам на
@@ -60,8 +61,8 @@
                         <img src="./img/Rectangle.png" alt="">
                     </div>
                     <div class="work__items work__items--right">
-                        <div class="work__items--circle work__items--circle--right">
-                            <img class="work__items__img" src="img/like.png" alt="">
+                        <div class="work__items--circle  work__items--circle--right">
+                            <img class="work__items__img " src="img/like.png" alt="">
                         </div>
                         <p class="work__items__desc">В течени 1-1.5 часов делаем необходимый пакет документов.
                         </p>
@@ -80,10 +81,9 @@
             ">
                     <div class="ourServise-type__block-left">
                         <h3 class="ourServise-type__title">Постановка на учет</h3>
-                        <p class="ourServise-type__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        <p class="ourServise-type__desc">Мы позиционируем себя как служба первой помощи для автомобилистов. Мы поможем вам поставить ваш автомобиль на учёт всего за 90 минут. Стоимость услуги 3500 рублей.
                         </p>
-                        <button class="ourServise-type__submit">Подробнее</button>
+                        <a class="ourServise-type__submit" href="servise_registration.php">Подробнее</a>
                     </div>
                     <div class="ourServise-type__block-right">
                         <img class='registration__block__img--up registration__block__img--up__serviseMain' src="./img/registration_desct.png" alt="">
@@ -96,10 +96,9 @@
                     </div>
                     <div class="ourServise-type__block-right">
                         <h3 class="ourServise-type__title">Снятие с учета</h3>
-                        <p class="ourServise-type__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        <p class="ourServise-type__desc">Если вам нужно снять ваш автомобиль с учёта, то мы максимально быстро сможем вам оказать квалифицированную помощь. Стоимость услуги 3500 рублей. 
                         </p>
-                        <button class="ourServise-type__submit">Подробнее</button>
+                        <a class="ourServise-type__submit" href="servise_removal.php">Подробнее</a>
                     </div>
                 </div>
 
@@ -107,10 +106,9 @@
             ">
                     <div class="ourServise-type__block-left">
                         <h3 class="ourServise-type__title">Договор купли-продажи</h3>
-                        <p class="ourServise-type__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        <p class="ourServise-type__desc">Наши специалисты вам помогут с оформлением договора купли-продажи автомобиля. Мы поможем вам подготовить документы, вам только нужно нам позвонить.
                         </p>
-                        <button class="ourServise-type__submit">Подробнее</button>
+                        <a class="ourServise-type__submit" href="servise_sale.php">Подробнее</a>
                     </div>
                     <div class="ourServise-type__block-right">
                         <img class='registration__block__img--up registration__block__img--up__serviseMain' src="./img/serviseBlock3.png" alt="">
@@ -123,10 +121,9 @@
                     </div>
                     <div class="ourServise-type__block-right">
                         <h3 class="ourServise-type__title">Замена ПТС и СТС</h3>
-                        <p class="ourServise-type__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        <p class="ourServise-type__desc">Если так получилось, что вы потеряли, либо у вас украли документы на транспортное средство, то мы вам поможем их восстановить, либо заменить. 
                         </p>
-                        <button class="ourServise-type__submit">Подробнее</button>
+                        <a class="ourServise-type__submit" href="servise_restoration.php">Подробнее</a>
                     </div>
                 </div>
 
@@ -134,10 +131,9 @@
             ">
                     <div class="ourServise-type__block-left">
                         <h3 class="ourServise-type__title">ОСАГО</h3>
-                        <p class="ourServise-type__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        <p class="ourServise-type__desc">Мы сотрудничаем только с лучшими и надёжными страховыми компаниями Москвы! Обращаясь к нам, вы можете быть уверенными в своей страховке. 
                         </p>
-                        <button class="ourServise-type__submit">Подробнее</button>
+                        <a class="ourServise-type__submit" href="servise_policy.php">Подробнее</a>
                     </div>
                     <div class="ourServise-type__block-right">
                         <img class='registration__block__img--up registration__block__img--up__serviseMain' src="./img/serviseBlock5.png" alt="">
@@ -150,21 +146,19 @@
                     </div>
                     <div class="ourServise-type__block-right">
                         <h3 class="ourServise-type__title">Замена гос. номеров</h3>
-                        <p class="ourServise-type__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        <p class="ourServise-type__desc">Наши специалисты помогут вам заменить номера, либо же сохранить их при продаже вашего автомобиля. Мы делаем всё максимально быстро по доступным ценам.
                         </p>
-                        <button class="ourServise-type__submit">Подробнее</button>
+                        <a class="ourServise-type__submit" href="servise_changeNumbers.php">Подробнее</a>
                     </div>
                 </div>
 
                 <div class="ourServise-type ourServise-type--flexTabl
             ">
                     <div class="ourServise-type__block-left">
-                        <h3 class="ourServise-type__title">Изменение регистрационных данных собсвтенника</h3>
-                        <p class="ourServise-type__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        <h3 class="ourServise-type__title">Изменение регистрационных данных собственника</h3>
+                        <p class="ourServise-type__desc">Если вы изменили свою фамилию, или же вы переехали и изменили место регистрации, то наши профессионалы вам окажут помощь в изменении регистрационных данных собственника авто.
                         </p>
-                        <button class="ourServise-type__submit">Подробнее</button>
+                        <a class="ourServise-type__submit" href="servise_changeNumbers.php">Подробнее</a>
                     </div>
                     <div class="ourServise-type__block-right">
                         <img class='registration__block__img--up registration__block__img--up__serviseMain' src="./img/serviseBlock7.png" alt="">
@@ -176,8 +170,7 @@
                         <h2 class="ourServise-type__title-about-team">Наша компания
                             <span class="about__team__title--color">gai-msk.ru</span>
                             <br>это команда профессионалов</h2>
-                        <p class="ourServise-type__desc ourServise-type__desc-team">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                        <p class="ourServise-type__desc ourServise-type__desc-team">Обращаясь к нам, вы можете быть уверенными в том, что наши специалисты сделают всё быстро и качественно. </p>
                         <p class="provision__block__phone  provision__block__phone--mainPage team-block__phone">+7 925 067-20-68</p>
                         <a href="tel:+79250672068" class="provision__block__phone  provision__block__phone--mainPage provision__block__phone--mainPage--click team-block__phone">+7 925 067-20-68</a>
 
@@ -189,7 +182,7 @@
         <!-- ... -->
 
         <!-- Секция №4 "Карта" -->
-        <section class="map_conteiner" id="contacts">
+        <section class="map_conteiner">
             <div id="map"></div>
             <div class="map__style">
                 <div class="container">

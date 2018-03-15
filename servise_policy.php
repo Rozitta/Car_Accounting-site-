@@ -1,5 +1,6 @@
 <?php require_once 'head.php'; ?>
-    <!-- основная часть сайта -->
+<script>var new_title = "Страховой полис ОСАГО" </script>
+
     <div class="wrapper">
         <div class="registration__part">
             <div class="container">
@@ -11,7 +12,7 @@
                     <div class="registr-desc__part">
                         <h1 class="registration__part__title policy-title">Что такое ОСАГО?</h1>
                         <p class="registration__block__desc">Обязательное страхование автогражданской ответственности действует на территории России с 2003 года.
-                            Сегодня каждый владелец автомобиля обязан оформить ОСАГО, либо воспользоваться добровольным страхованием
+                            Сегодня каждый владелец автомобиля обязан оформить ОСАГО, а так же может дополнительно воспользоваться добровольным страхованием
                             автомобиля по программе КАСКО. </p>
                     </div>
                     <img class='registration__block__img--up' src="./img/registration_desct.png" alt="">
@@ -33,8 +34,7 @@
         <div class="benefit">
             <div class="container">
                 <div class="benefit-block">
-                    <p class="benefit-block__desc">Обращаясь к нам, вы сможете зарегистрировать своё транспортное средство всего лишь за 90 минут.
-                        <br> Для этого вам нужно просто связаться по нашему номеру телефона:
+                    <p class="benefit-block__desc"> К выбору страховой компании следует отнестись очень серьезно, ведь в противном случае принятие неверного решения чревато долгими судебными разбирательствами и потерей денег.
                     </p>
                     <p class="provision__block__phone provision__block__phone--benefit">+7 925 067-20-68</p>
                     <a href="tel:+79250672068" class="provision__block__phone provision__block__phone--benefit provision__block__phone--benefit--click">+7 925 067-20-68</a>
@@ -49,8 +49,7 @@
                         <h2 class="registr-instruction__title restoration-instrustion__title">Порядок оформления полиса
                         </h2>
                         <div class="sale__desc">
-                            <p class="registr-instruction__desc restoration-desc--margin">Договоры страхования ОСАГО заключаются на один год и, при необходимости, могут быть расторгнуты
-                                по желанию автовладельца. При оформлении полиса, водителю необходимо:</p>
+                            <p class="registr-instruction__desc restoration-desc--margin">Договор страхования ОСАГО заключается на один год и, при необходимости может быть расторгнут (продажа авто, кража авто) с подтверждением соответствующих документов. При оформлении полиса, водителю необходимо:</p>
                             <ul class='adventures__block__list policy-adventures__block'>
                                 <li class='adventures__block__link adventures__block__link--color restoration-link--lh'>Позвонить
                                 </li>
@@ -75,10 +74,10 @@
                     <h3 class="registr-title">Список документов</h3>
                     <p class="registr-desc">Оформление полиса ОСАГО</p>
                     <ul class='registr-type'>
-                        <li class='registr-list'>Паспорт гражданина страны владельца ТС; </li>
-                        <li class='registr-list'>Водительское удостоверение;</li>
-                        <li class='registr-list'>Временная регистрация владельца;</li>
-                        <li class='registr-list'>Документ подтверждающий права владения ТС (договор купли-продажи); </li>
+                        <li class='registr-list'>Паспорт гражданина страны владельца ТС </li>
+                        <li class='registr-list'>Водительское удостоверение</li>
+                        <li class='registr-list'>Временная регистрация владельца</li>
+                        <li class='registr-list'>Документ подтверждающий права владения ТС (договор купли-продажи) </li>
                         <li class='registr-list'>Диагностическая карта ТС</li>
                     </ul>
                 </div>
