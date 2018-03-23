@@ -1,6 +1,6 @@
-<?php require_once 'head.php'; ?>
-<script>var new_title = "Отзывы" </script>
-
+<?php 
+$title = "Отзывы";
+require_once 'head.php'; ?>
  <div class="wrapper">
         <div class="container">
             <div class="reviews">

@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="footer-head">
                     <div class=" footer-navbar">
-                        <a class=" footer__logo" href="index.php">
+                        <a class=" footer__logo" href="index">
                             <img class="navbar__logo__img" src="./img/logo.png" alt="">
                             <span class="navbar__logo__name navbar__logo__name--white">gai-msk<span class="navbar__logo__name--color">.ru</span>
                             </span>
@@ -13,44 +13,44 @@
                             <!--  -->
                             <ul class="navbar__list--firstColum navbar__list--colum">
                                 <li class="footer__items">
-                                    <a class="footer__link" href="index.php">Главная</a>
+                                    <a class="footer__link" href="index">Главная</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link" href="about_us.php">О нас</a>
+                                    <a class="footer__link" href="about_us">О нас</a>
                                 </li>
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="reviews.php">Отзывы</a>
+                                    <a class="footer__link" href="reviews">Отзывы</a>
                                 </li>
                             </ul>
                             <!--  -->
                             <ul class="navbar__list--secondtColum navbar__list--colum">
                                 <li class="footer__items">
-                                    <a class="footer__link" href="servise_registration.php">Постановка на учет</a>
+                                    <a class="footer__link" href="postanovka_na_uchyot">Постановка на учет</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link" href="servise_removal.php">Снятие с учета</a>
+                                    <a class="footer__link" href="snyatie_s_uchyota">Снятие с учета</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link" href="servise_changeNumbers.php">Замена гос. номеров</a>
+                                    <a class="footer__link" href="zamena_gos_nomerov">Замена гос. номеров</a>
                                 </li>
                             </ul>
                             <!--  -->
                             <ul class="navbar__list--thirdtColum navbar__list--colum">
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="servise_restoration.php">Замена ПТС и СТС</a>
+                                    <a class="footer__link" href="zamena_vosstanovlenie_pts_sts">Замена ПТС и СТС</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link" href="servise_sale.php">Договор купли-продажи</a>
+                                    <a class="footer__link" href="dogovor_kupli_prodazhi">Договор купли-продажи</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link " href="servise_changeRegistration.php">Изменение регистрационных данных собственнкиа</a>
+                                    <a class="footer__link " href="izmenenie_registracionnyh_dannyh_sobstvennika_ts">Изменение регистрационных данных собственнкиа</a>
                                 </li>
 
                             </ul>
                             <!--  -->
                             <ul class="navbar__list--fourColum navbar__list--colum">
                             <li class=" footer__items">     
-                                    <a class="footer__link" href="servise_policy.php">ОСАГО</a>
+                                    <a class="footer__link" href="osago">ОСАГО</a>
                                 </li>
                           
                             </ul>
@@ -60,29 +60,29 @@
                             <!--  -->
                             <ul class="navbar__list--firstColum navbar__list--colum">
                                 <li class="  footer__items">
-                                    <a class="footer__link" href="index.php">Главная</a>
+                                    <a class="footer__link" href="index">Главная</a>
                                 </li>
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="about_us.php">О нас</a>
+                                    <a class="footer__link" href="about_us">О нас</a>
                                 </li>
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="reviews.php">Отзывы</a>
+                                    <a class="footer__link" href="reviews">Отзывы</a>
                                 </li>
                             </ul>
                             <!--  -->
                             <ul class="navbar__list--secondtColum navbar__list--colum">
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="servise_registration.php">Постановка на учет</a>
+                                    <a class="footer__link" href="postanovka_na_uchyot">Постановка на учет</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link" href="servise_removal.php">Снятие с учета</a>
+                                    <a class="footer__link" href="snyatie_s_uchyota">Снятие с учета</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link" href="servise_changeNumbers.php">Замена гос. номеров</a>
+                                    <a class="footer__link" href="zamena_gos_nomerov">Замена гос. номеров</a>
                                 </li>
                               
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="servise_restoration.php">Замена ПТС и СТС</a>
+                                    <a class="footer__link" href="zamena_vosstanovlenie_pts_sts">Замена ПТС и СТС</a>
                                 </li>
                             </ul>
                             <!--  -->
@@ -91,13 +91,13 @@
                                 
                                 
                                 <li class="footer__items">
-                                    <a class="footer__link " href="servise_changeRegistration.php">Изменение регистрационных данных собственнкиа</a>
+                                    <a class="footer__link " href="izmenenie_registracionnyh_dannyh_sobstvennika_ts">Изменение регистрационных данных собственнкиа</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link" href="servise_sale.php">Договор купли-продажи</a>
+                                    <a class="footer__link" href="dogovor_kupli_prodazhi">Договор купли-продажи</a>
                                 </li>
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="servise_policy.php">ОСАГО</a>
+                                    <a class="footer__link" href="osago">ОСАГО</a>
                                 </li>
                             </ul>
                         </div>
@@ -105,7 +105,7 @@
                         <div class="menu footer__menu--tablets">
                             <!--  -->
                             <ul class="navbar__list--firstColum navbar__list--colum">
-                            <a class="footer__logo--phones" href="index.php">
+                            <a class="footer__logo--phones" href="index">
                             <img class="navbar__logo__img" src="./img/logo.png" alt="">
                             <span class="navbar__logo__name navbar__logo__name--white">gai-msk<span class="navbar__logo__name--color">.ru</span>
                             </span>
@@ -114,37 +114,37 @@
                                     <a href="tel:+79250672068" class=" footer-tel footer__link-tel">+7 925 067-20-68</a>
                                 </li>
                                 <li class="  footer__items">
-                                    <a class="footer__link" href="index.php">Главная</a>
+                                    <a class="footer__link" href="index">Главная</a>
                                 </li>
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="about_us.php">О нас</a>
+                                    <a class="footer__link" href="about_us">О нас</a>
                                 </li>
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="reviews.php">Отзывы</a>
+                                    <a class="footer__link" href="reviews">Отзывы</a>
                                 </li>
                             </ul>
                             <!--  -->
                             <ul class="navbar__list--secondtColum navbar__list--colum">
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="servise_registration.php">Постановка на учет</a>
+                                    <a class="footer__link" href="postanovka_na_uchyot">Постановка на учет</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link" href="servise_removal.php">Снятие с учета</a>
+                                    <a class="footer__link" href="snyatie_s_uchyota">Снятие с учета</a>
                                 </li>
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="servise_restoration.php">Замена ПТС и СТС</a>
+                                    <a class="footer__link" href="zamena_vosstanovlenie_pts_sts">Замена ПТС и СТС</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link" href="servise_changeNumbers.php">Замена гос. номеров</a>
+                                    <a class="footer__link" href="zamena_gos_nomerov">Замена гос. номеров</a>
                                 </li>
                                 <li class="footer__items footer__link--center">
-                                    <a class="footer__link " href="servise_changeRegistration.php">Изменение регистрационных данных собственнкиа</a>
+                                    <a class="footer__link " href="izmenenie_registracionnyh_dannyh_sobstvennika_ts">Изменение регистрационных данных собственнкиа</a>
                                 </li>
                                 <li class="footer__items">
-                                    <a class="footer__link" href="servise_sale.php">Договор купли-продажи</a>
+                                    <a class="footer__link" href="dogovor_kupli_prodazhi">Договор купли-продажи</a>
                                 </li>
                                 <li class=" footer__items">
-                                    <a class="footer__link" href="servise_policy.php">ОСАГО</a>
+                                    <a class="footer__link" href="osago">ОСАГО</a>
                                 </li>
                             </ul>
                             <!--  -->
@@ -165,7 +165,7 @@
     <script src="./js/index-dist.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhG_pzTkjY4tRvVZ5tfU77AeO-Voo5JFQ&callback=initMap">
     </script>
-    <script> document.title = new_title; </script>
+
 
 
 </body>

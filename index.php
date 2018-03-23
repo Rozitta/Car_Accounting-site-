@@ -1,5 +1,9 @@
-<?php require_once 'head.php'; ?>
-<script>var new_title = "Центр авто услуг" </script>
+
+<?php $title = "Автоуслуги в Москве. Предоставление помощи водителям в центре автоуслуг: цена – GAI-MSK";
+$new_keywords = "регистрация авто, регистрация гибдд москва, авто учет москва";
+$new_description = "Центр автоуслуг в Москве GAI-MSK. Предоставляем помощь автолюбителям в оформлении автомобильных документов. Документы на авто за 90 минут.";
+require_once 'head.php'; 
+?>
 
     <div class="wrapper">
         <!-- секция №1 -->
@@ -83,7 +87,7 @@
                         <h3 class="ourServise-type__title">Постановка на учет</h3>
                         <p class="ourServise-type__desc">Мы позиционируем себя как служба первой помощи для автомобилистов. Мы поможем вам поставить ваш автомобиль на учёт всего за 90 минут. Стоимость услуги 3500 рублей.
                         </p>
-                        <a class="ourServise-type__submit" href="servise_registration.php">Подробнее</a>
+                        <a class="ourServise-type__submit" href="postanovka_na_uchyot.php">Подробнее</a>
                     </div>
                     <div class="ourServise-type__block-right">
                         <img class='registration__block__img--up registration__block__img--up__serviseMain' src="./img/registration_desct.png" alt="">
@@ -98,7 +102,7 @@
                         <h3 class="ourServise-type__title">Снятие с учета</h3>
                         <p class="ourServise-type__desc">Если вам нужно снять ваш автомобиль с учёта, то мы максимально быстро сможем вам оказать квалифицированную помощь. Стоимость услуги 3500 рублей. 
                         </p>
-                        <a class="ourServise-type__submit" href="servise_removal.php">Подробнее</a>
+                        <a class="ourServise-type__submit" href="snyatie_s_uchyota.php">Подробнее</a>
                     </div>
                 </div>
 
@@ -108,7 +112,7 @@
                         <h3 class="ourServise-type__title">Договор купли-продажи</h3>
                         <p class="ourServise-type__desc">Наши специалисты вам помогут с оформлением договора купли-продажи автомобиля. Мы поможем вам подготовить документы, вам только нужно нам позвонить.
                         </p>
-                        <a class="ourServise-type__submit" href="servise_sale.php">Подробнее</a>
+                        <a class="ourServise-type__submit" href="dogovor_kupli_prodazhi.php">Подробнее</a>
                     </div>
                     <div class="ourServise-type__block-right">
                         <img class='registration__block__img--up registration__block__img--up__serviseMain' src="./img/serviseBlock3.png" alt="">
@@ -123,7 +127,7 @@
                         <h3 class="ourServise-type__title">Замена ПТС и СТС</h3>
                         <p class="ourServise-type__desc">Если так получилось, что вы потеряли, либо у вас украли документы на транспортное средство, то мы вам поможем их восстановить, либо заменить. 
                         </p>
-                        <a class="ourServise-type__submit" href="servise_restoration.php">Подробнее</a>
+                        <a class="ourServise-type__submit" href="zamena_vosstanovlenie_pts_sts.php">Подробнее</a>
                     </div>
                 </div>
 
@@ -133,7 +137,7 @@
                         <h3 class="ourServise-type__title">ОСАГО</h3>
                         <p class="ourServise-type__desc">Мы сотрудничаем только с лучшими и надёжными страховыми компаниями Москвы! Обращаясь к нам, вы можете быть уверенными в своей страховке. 
                         </p>
-                        <a class="ourServise-type__submit" href="servise_policy.php">Подробнее</a>
+                        <a class="ourServise-type__submit" href="osago.php">Подробнее</a>
                     </div>
                     <div class="ourServise-type__block-right">
                         <img class='registration__block__img--up registration__block__img--up__serviseMain' src="./img/serviseBlock5.png" alt="">
@@ -148,7 +152,7 @@
                         <h3 class="ourServise-type__title">Замена гос. номеров</h3>
                         <p class="ourServise-type__desc">Наши специалисты помогут вам заменить номера, либо же сохранить их при продаже вашего автомобиля. Мы делаем всё максимально быстро по доступным ценам.
                         </p>
-                        <a class="ourServise-type__submit" href="servise_changeNumbers.php">Подробнее</a>
+                        <a class="ourServise-type__submit" href="zamena_gos_nomerov.php">Подробнее</a>
                     </div>
                 </div>
 
@@ -158,7 +162,7 @@
                         <h3 class="ourServise-type__title">Изменение регистрационных данных собственника</h3>
                         <p class="ourServise-type__desc">Если вы изменили свою фамилию, или же вы переехали и изменили место регистрации, то наши профессионалы вам окажут помощь в изменении регистрационных данных собственника авто.
                         </p>
-                        <a class="ourServise-type__submit" href="servise_changeNumbers.php">Подробнее</a>
+                        <a class="ourServise-type__submit" href="izmenenie_registracionnyh_dannyh_sobstvennika_ts.php">Подробнее</a>
                     </div>
                     <div class="ourServise-type__block-right">
                         <img class='registration__block__img--up registration__block__img--up__serviseMain' src="./img/serviseBlock7.png" alt="">

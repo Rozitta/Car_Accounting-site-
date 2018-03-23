@@ -115,26 +115,6 @@ $(function () {
 //  });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  // открытие submenu при клике на планшетах
  $(function () {
      var openBtn = $('.burger__items--servise'),
@@ -168,5 +148,5 @@ for (var i = 0; i < a_link.length; i++) {
         } 
             a_link[i].classList.add("navbar__link--active");
     }
-};
+}
 

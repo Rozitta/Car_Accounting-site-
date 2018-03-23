@@ -1,5 +1,7 @@
-<?php require_once 'head.php'; ?>
-<script>var new_title = "О нас" </script>
+<?php 
+$title = "О нас";
+require_once 'head.php'; ?>
+
 
         <div class="wrapper">
         <div class="about__team">
